@@ -7,6 +7,8 @@ import Featured from './components/Featured';
 import SpecialFeatureHeading from './components/SpecialFeatureHeading';
 import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
+import Register from './components/Register';
+import Signup from './components/Signup';
 
 function App() {
 	return (
@@ -17,6 +19,10 @@ function App() {
 				<SpecialFeatureHeading />
 				<Featured />
 				<CallToAction />
+				<h2>Please Login with Your</h2>
+				<Register />
+				<h2>Please Register</h2>
+				<Signup />
 			</Container>
 			<Footer />
 		</>

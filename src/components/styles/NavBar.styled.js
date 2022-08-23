@@ -11,6 +11,7 @@ export const StyledNav = styled.nav`
 		border-radius: 0.438rem;
 		background: #e2b887;
 		margin-left: 2.813rem;
+		width: 100px;
 	}
 	.signup-text {
 		color: rgba(0, 48, 46, 1);
