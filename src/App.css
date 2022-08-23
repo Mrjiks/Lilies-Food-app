@@ -83,7 +83,9 @@ p {
 	line-height: 33px;
 	color: rgba(255, 255, 255, 0.83);
 }
-
+.feature-image {
+	object-fit: cover;
+}
 .cta-section {
 	margin-top: 12rem;
 	display: flex;
@@ -154,9 +156,9 @@ p {
 
 .footer-copyright {
 	display: flex;
-	justify-content: space-between;
-	align-items: initial;
-	width: 50%;
+	justify-content: space-around;
+	align-items: center;
+	width: 85%;
 	margin: 0 auto;
 	color: rgba(251, 221, 187, 1);
 }
@@ -166,4 +168,8 @@ p {
 }
 .socials .fa-icons {
 	margin: 10px;
+}
+.footer-logo {
+	width: 5.813rem;
+	margin-bottom: 0.625rem;
 }

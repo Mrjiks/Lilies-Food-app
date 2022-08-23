@@ -2,6 +2,7 @@ import React from 'react';
 import { FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 import apple from '../components/assets/apple.svg';
 import google from '../components/assets/google.svg';
+import logoTwo from '../components/assets/logoTwo.svg';
 
 const Footer = () => {
 	return (
@@ -32,6 +33,11 @@ const Footer = () => {
 				</div>
 			</div>
 			<div className="footer-copyright">
+				<div>
+					<a href="#home">
+						<img className="footer-logo" src={logoTwo} alt="" />
+					</a>
+				</div>
 				<div>
 					<p>© 2022 Lilies Food.</p>
 				</div>

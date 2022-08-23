@@ -32,13 +32,13 @@ export const Flex = styled.div`
 	}
 	.logo-wrapper {
 		display: flex;
-		align-items: center;
 		h3 {
 			margin-left: 1.2rem;
 			color: rgba(255, 255, 255, 1);
 		}
 		.logo {
-			width: 3.593rem;
+			width: 10.608rem;
+			height: 4.188rem;
 		}
 	}
 `;

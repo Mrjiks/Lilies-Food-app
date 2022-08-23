@@ -6,7 +6,7 @@ export const StyledFeatured = styled.section`
 	align-items: center;
 	margin: 0 auto;
 	.special-food-heading {
-		margin-top: 120px;
+		margin-top: 11.25rem;
 	}
 
 	.special-food-info {
