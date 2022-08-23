@@ -16,11 +16,4 @@ export const StyledNav = styled.nav`
 	.signup-text {
 		color: rgba(0, 48, 46, 1);
 	}
-	.sticky-header {
-		position: sticky;
-		top: 0;
-		height: 90px;
-		opacity: 0.9;
-		z-index: 99;
-	}
 `;

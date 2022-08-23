@@ -24,8 +24,6 @@ export const Flex = styled.div`
 		height: 77px;
 		left: 98px;
 		top: 549px;
-
-		font-family: 'Poppins';
 		font-style: normal;
 		font-weight: 400;
 		font-size: 18px;

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 * {
 	margin: 0;
 	padding: 0;
@@ -5,6 +6,16 @@
 }
 body {
 	background: rgba(0, 48, 46, 1);
+	font-family: 'Poppins';
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Poppins';
 }
 .App {
 	text-align: center;
@@ -38,13 +49,11 @@ p {
 	color: white;
 	text-align: center;
 	margin: 0 auto;
-	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 700;
 	line-height: 2.063rem;
 }
 .special-food-heading p {
-	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 1.125rem;
@@ -55,7 +64,6 @@ p {
 }
 
 .feature-wrapper h1 {
-	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 1.688rem;
@@ -65,7 +73,6 @@ p {
 }
 
 .feature-wrapper p {
-	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 18px;
@@ -80,7 +87,6 @@ p {
 	align-items: center;
 }
 .cta-heading {
-	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 36px;
@@ -89,7 +95,6 @@ p {
 	color: #fbddbb;
 }
 .cta-desc {
-	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 18px;
