@@ -2,11 +2,13 @@ import React from 'react';
 import { StyledNav } from './styles/NavBar.styled';
 const NavBar = () => {
 	return (
-		<StyledNav>
-			<a href="/">Home</a>
-			<a href="/login">Login</a>
-			<button>
-				<a href="/signup">Sign Up</a>
+		<StyledNav className="sticky-header">
+			<a href="#">Home</a>
+			<a href="#">Login</a>
+			<button className="signup">
+				<a className="signup-text" href="#">
+					Sign Up
+				</a>
 			</button>
 		</StyledNav>
 	);

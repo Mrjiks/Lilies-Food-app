@@ -6,7 +6,7 @@ import { Flex } from './styles/Flex.styled';
 const Header = () => {
 	return (
 		<Flex>
-			<div className="logo-wrapper">
+			<div className="logo-wrapper sticky-header">
 				<img src={logo} alt="" className="logo" />
 				<span>
 					<h3>Lilies</h3>
