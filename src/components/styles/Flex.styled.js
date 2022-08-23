@@ -9,27 +9,17 @@ export const Flex = styled.div`
 	margin: 0 auto;
 
 	h1 {
-		font-family: 'Poppins';
 		font-style: normal;
 		font-weight: 500;
-		font-size: 64px;
-		line-height: 77px;
-		width: 650px;
-		height: 167px;
-
+		font-size: 4rem;
+		line-height: 4.813rem;
 		color: #ffffff;
 	}
 	p {
-		width: 609px;
-		height: 77px;
-		left: 98px;
-		top: 549px;
 		font-style: normal;
 		font-weight: 400;
-		font-size: 18px;
-		line-height: 33px;
-		/* or 183% */
-
+		font-size: 1.125rem;
+		line-height: 2.063rem;
 		color: rgba(255, 255, 255, 0.74);
 	}
 
@@ -48,7 +38,7 @@ export const Flex = styled.div`
 			color: rgba(255, 255, 255, 1);
 		}
 		.logo {
-			width: 57.48px;
+			width: 3.593rem;
 		}
 	}
 `;

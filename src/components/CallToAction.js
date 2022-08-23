@@ -17,9 +17,9 @@ const CallToAction = () => {
 						type="email"
 						name="email"
 						id="email"
-						placeholder="youremial@email.com"
+						placeholder="youremail@email.com"
 					/>
-					<button className="cta-button" type="submit">
+					<button className="cta-button" type="submit" id="cta">
 						Get notified
 					</button>
 				</form>

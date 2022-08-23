@@ -6,7 +6,7 @@ const NavBar = () => {
 			<a href="#">Home</a>
 			<a href="#">Login</a>
 			<button className="signup">
-				<a className="signup-text" href="#">
+				<a className="signup-text" href="#cta">
 					Sign Up
 				</a>
 			</button>
