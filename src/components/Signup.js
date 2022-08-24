@@ -6,6 +6,7 @@ const Signup = () => {
 	return (
 		<Container>
 			<Login
+				id="signup"
 				title="Welcome to Lilies!"
 				login="SIGN UP"
 				image={loginImage}

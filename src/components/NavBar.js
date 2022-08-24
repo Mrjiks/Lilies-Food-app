@@ -6,9 +6,9 @@ const NavBar = () => {
 			<a href="#" id="home">
 				Home
 			</a>
-			<a href="#">Login</a>
+			<a href="#signin">Login</a>
 			<button className="signup">
-				<a className="signup-text" href="#cta">
+				<a className="signup-text" href="#signup">
 					Sign Up
 				</a>
 			</button>

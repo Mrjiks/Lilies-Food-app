@@ -5,7 +5,7 @@ import { Container } from './styles/Container.styled';
 
 const Register = () => {
 	return (
-		<Container>
+		<Container id="signin">
 			<Login
 				title="Welcome Back!"
 				login="Login"

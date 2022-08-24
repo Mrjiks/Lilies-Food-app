@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Login = ({ title, login, image, create, forgot }) => {
 	return (
-		<section className="loginpage">
+		<section className="loginpage" id="signup">
 			<div>
 				<img src={image} alt="" />
 			</div>
