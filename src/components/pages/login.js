@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Login = ({ title, login, image, create, forgot }) => {
 	return (
-		<section className="loginpage" id="signup">
+		<section className="loginpage" id="signin">
 			<div>
 				<img src={image} alt="" />
 			</div>
@@ -27,7 +28,9 @@ export const Login = ({ title, login, image, create, forgot }) => {
 					<button type="submit">{login}</button>
 				</form>
 				<div className="form-support">
-					<p>{create}</p>
+					<Link to="/signup" className="react-link">
+						<p>{create}</p>
+					</Link>
 					<p>{forgot}</p>
 				</div>
 			</div>

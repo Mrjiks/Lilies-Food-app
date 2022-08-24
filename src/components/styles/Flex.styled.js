@@ -5,7 +5,6 @@ export const Flex = styled.div`
 	align-items: center;
 	justify-content: space-between;
 
-	width: 100%;
 	margin: 0 auto;
 
 	h1 {

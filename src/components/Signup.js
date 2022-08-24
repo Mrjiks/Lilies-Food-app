@@ -1,19 +1,21 @@
 import React from 'react';
-import { Login } from '../components/pages/login';
+import { SignUpage } from '../components/pages/signup';
 import loginImage from '../components/assets/loginImage.svg';
 import { Container } from './styles/Container.styled';
+import Header from '../components/Header';
 const Signup = () => {
 	return (
-		<Container>
-			<Login
+		<>
+			<Header />
+			<SignUpage
 				id="signup"
 				title="Welcome to Lilies!"
 				login="SIGN UP"
 				image={loginImage}
-				create="Already have an account?"
-				forgot="LOGIN"
+				olduser="Already have an account?"
+				oldUserLogin="Login"
 			/>
-		</Container>
+		</>
 	);
 };
 

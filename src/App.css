@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 html {
 	scroll-behavior: smooth;
+	transition: all 1s ease-in;
 }
 * {
 	margin: 0;
@@ -135,7 +136,7 @@ p {
 	display: flex;
 	justify-content: space-between;
 	align-items: initial;
-	width: 60%;
+	width: 100%;
 	margin: 0 auto;
 	padding: 50px;
 	color: rgba(251, 221, 187, 1);
@@ -156,9 +157,9 @@ p {
 
 .footer-copyright {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	width: 85%;
+	width: 100%;
 	margin: 0 auto;
 	color: rgba(251, 221, 187, 1);
 }
@@ -177,9 +178,11 @@ p {
 	filter: drop-shadow(0 0 0.3em #fbddbb);
 }
 /* Login Page */
-.loginpage {
+.loginpage,
+.signuppage {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	margin-top: 120px;
 }
 
 .form-wrapper {
@@ -204,7 +207,13 @@ button {
 	border: 1px solid rgba(251, 221, 187, 0.51);
 	border-radius: 5px;
 }
-
+/* .form-wrap  button:hover {
+	border-color: #646cff;
+}
+.form-wrap button:focus,
+button:focus-visible {
+	outline: 4px auto -webkit-focus-ring-color;
+} */
 .form-wrapper input {
 	margin-bottom: 48px;
 }
@@ -226,4 +235,12 @@ button {
 .form-support {
 	display: flex;
 	justify-content: space-around;
+}
+
+.react-link {
+	text-decoration: none;
+	color: #00302e;
+}
+.react-link-btn :hover {
+	cursor: pointer;
 }
