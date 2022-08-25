@@ -14,7 +14,7 @@ import CallToAction from '../components/CallToAction';
 import Footer from '../components/Footer';
 /////////////////////////////////////////////////////////////////////////
 
-const Home = ({ text }) => {
+const Home = () => {
 	return (
 		<>
 			<Container>

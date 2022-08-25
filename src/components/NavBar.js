@@ -13,9 +13,7 @@ const NavBar = () => {
 				<a>Login</a>
 			</Link>
 			<Link to="/signup">
-				<button className="signup react-link-btn">
-					<a className="signup-text">Sign Up</a>
-				</button>
+				<button className="signup react-link-btn">Sign Up</button>
 			</Link>
 		</StyledNav>
 	);

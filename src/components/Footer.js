@@ -39,7 +39,7 @@ const Footer = () => {
 					</a>
 				</div>
 				<div>
-					<p>© 2022 Lilies Food.</p>
+					<p>All rights reserved © Harrison E. Obetta 2022</p>
 				</div>
 				<p>Designed by Jiks</p>
 				<div className="socials">

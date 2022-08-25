@@ -5,6 +5,9 @@ export const StyledNav = styled.nav`
 		color: rgba(251, 221, 187, 1);
 		padding: 15px;
 	}
+	a:hover {
+		text-decoration: underline;
+	}
 	.signup {
 		height: 30px;
 		color: rgba(0, 48, 46, 1);
@@ -12,6 +15,9 @@ export const StyledNav = styled.nav`
 		background: #e2b887;
 		margin-left: 2.813rem;
 		width: 100px;
+	}
+	.signup:hover {
+		cursor: pointer;
 	}
 	.signup-text {
 		color: rgba(0, 48, 46, 1);
