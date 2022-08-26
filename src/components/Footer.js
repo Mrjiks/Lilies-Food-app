@@ -1,8 +1,9 @@
 import React from 'react';
-import { FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaTwitter, FaInstagram, FaYoutube, FaGithubAlt } from 'react-icons/fa';
 import apple from '../components/assets/apple.svg';
 import google from '../components/assets/google.svg';
 import logoTwo from '../components/assets/logoTwo.svg';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 	return (
@@ -43,9 +44,14 @@ const Footer = () => {
 				</div>
 				<p>Designed by Jiks</p>
 				<div className="socials">
-					<FaTwitter className="fa-icons" />
+					<a href="https://twitter.com/iamjikson">
+						<FaTwitter className="fa-icons" />
+					</a>
 					<FaInstagram className="fa-icons" />
 					<FaYoutube className="fa-icons" />
+					<a href="https://github.com/Mrjiks">
+						<FaGithubAlt className="fa-icons" />
+					</a>
 				</div>
 			</div>
 		</section>

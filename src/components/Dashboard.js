@@ -6,13 +6,13 @@ import { Container } from './styles/Container.styled';
 
 const Dashboard = () => {
 	return (
-		<div className="dashboard-wrapper">
+		<Container className="dashboard-wrapper hide">
 			<Sidebar />
 			<div>
 				<DashboardHeader />
 				<DashboardFoodBox />
 			</div>
-		</div>
+		</Container>
 	);
 };
 

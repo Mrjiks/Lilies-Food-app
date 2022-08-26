@@ -6,10 +6,12 @@ const Dashboardfood = ({ image, title, desc, price }) => {
 			<img src={image} alt="" className="feature-image" />
 			<h1 className="feature-heading">{title}</h1>
 			<p className="feature-desc">{desc}</p>
-			<div>
+			<div className="price-and-item-btn">
 				<p>{price}</p>
 				<h3>
-					<>Add to cart</>
+					<a href="" style={{ textDecoration: 'none' }}>
+						Add to cart
+					</a>
 				</h3>
 			</div>
 		</div>

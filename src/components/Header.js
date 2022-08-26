@@ -7,7 +7,9 @@ const Header = () => {
 	return (
 		<Flex>
 			<div className="logo-wrapper sticky-header">
-				<img src={logoTwo} alt="" className="logo" />
+				<a href="/">
+					<img src={logoTwo} alt="" className="logo" />
+				</a>
 			</div>
 			<div>
 				<NavBar />
