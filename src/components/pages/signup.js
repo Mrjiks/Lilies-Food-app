@@ -18,7 +18,7 @@ export const SignUpage = ({ title, login, image, olduser, oldUserLogin }) => {
 		e.preventDefault();
 		localStorage.setItem('user', JSON.stringify(form));
 
-		toast.success('Thanks Joining Us 😍');
+		toast.success('Thanks for Joining Us 😍');
 		setInterval(() => {
 			window.location = '/login';
 		}, 1500);
@@ -39,6 +39,7 @@ export const SignUpage = ({ title, login, image, olduser, oldUserLogin }) => {
 						placeholder="Your First Name"
 						type="text"
 						name="name"
+						required
 					/>
 
 					<input
@@ -47,6 +48,7 @@ export const SignUpage = ({ title, login, image, olduser, oldUserLogin }) => {
 						placeholder="Your Email address"
 						id="email"
 						onChange={handleChange}
+						required
 					/>
 					<input
 						type="password"
@@ -54,6 +56,7 @@ export const SignUpage = ({ title, login, image, olduser, oldUserLogin }) => {
 						id="password"
 						placeholder="Your Password"
 						onChange={handleChange}
+						required
 					/>
 					<button type="submit">{login}</button>
 				</form>

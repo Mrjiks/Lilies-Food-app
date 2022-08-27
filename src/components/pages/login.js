@@ -19,7 +19,8 @@ export const Login = ({ title, login, image, create, forgot }) => {
 
 		if (
 			user.email === loginData.email &&
-			user.password === loginData.password
+			user.password === loginData.password &&
+			user.email !== ''
 		) {
 			setInterval(() => {
 				window.location = '/DashboardFood';
