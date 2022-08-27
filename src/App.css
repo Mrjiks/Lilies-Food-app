@@ -31,6 +31,7 @@ h6 {
 .hero-image {
 	height: 400px;
 	width: 200px;
+	margin-right: 3rem;
 }
 .hero-text {
 	height: 10.438rem;
@@ -44,7 +45,7 @@ p {
 
 /*? Feature Section CSS */
 .special-food-heading {
-	margin-top: 12rem;
+	margin-top: 10rem;
 }
 .special-food-heading h1 {
 	color: white;
@@ -61,7 +62,7 @@ p {
 	line-height: 183%;
 	text-align: center;
 	color: rgba(255, 255, 255, 0.83);
-	margin-top: 2.188rem;
+	margin-top: 2rem;
 }
 
 .feature-wrapper h1 {
@@ -183,7 +184,7 @@ p {
 .signuppage {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	margin-top: 120px;
+	margin-top: 90px;
 }
 
 .form-wrapper {
@@ -230,6 +231,10 @@ button {
 .form-support {
 	display: flex;
 	justify-content: space-around;
+}
+
+::placeholder {
+	color: rgb(224, 156, 78);
 }
 
 .react-link {
@@ -285,13 +290,9 @@ button {
 	background: #ffffff;
 }
 
-/* .feature-wrapper {
-} */
 .foodboox-wrapper {
 	width: 240px;
 	height: 307px;
-
-	/* align-items: center; */
 }
 
 .price-and-item-btn {
@@ -308,10 +309,8 @@ button {
 	background-color: #f7f7f7;
 }
 
-/*! Hide DashBard */
-/* .hide {
-	visibility: hidden;
-} */
+/*? Sidebar */
+
 .sidebar-cart-wrapper {
 	display: flex;
 }
@@ -370,15 +369,10 @@ button {
 	margin-bottom: 20px;
 }
 
-h3 {
-	margin-bottom: 3rem;
-}
-
 .headerBar {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	gap: 2rem;
-	/* margin-bottom: 2rem; */
 }
 
 button:hover {

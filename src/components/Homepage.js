@@ -11,7 +11,7 @@ import Header from '../components/Header';
 import Featured from '../components/Featured';
 import SpecialFeatureHeading from '../components/SpecialFeatureHeading';
 import CallToAction from '../components/CallToAction';
-import Footer from '../components/Footer';
+
 /////////////////////////////////////////////////////////////////////////
 
 const Home = () => {

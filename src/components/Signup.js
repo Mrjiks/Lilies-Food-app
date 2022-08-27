@@ -1,7 +1,6 @@
 import React from 'react';
 import { SignUpage } from '../components/pages/signup';
-import loginImage from '../components/assets/loginImage.svg';
-import { Container } from './styles/Container.styled';
+import signupimage from '../components/assets/signupimage.png';
 import Header from '../components/Header';
 const Signup = () => {
 	return (
@@ -11,7 +10,7 @@ const Signup = () => {
 				id="signup"
 				title="Welcome to Lilies!"
 				login="SIGN UP"
-				image={loginImage}
+				image={signupimage}
 				olduser="Already have an account?"
 				oldUserLogin="Login"
 			/>

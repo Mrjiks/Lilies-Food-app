@@ -1,6 +1,6 @@
 import React from 'react';
 import { Login } from '../components/pages/login';
-import login from '../components/assets/login.svg';
+import loginimage from '../components/assets/loginimage.png';
 import Header from '../components/Header';
 
 const Register = () => {
@@ -10,7 +10,7 @@ const Register = () => {
 			<Login
 				title="Welcome Back!"
 				login="LOGIN"
-				image={login}
+				image={loginimage}
 				create="Create an account"
 				forgot="Forgot password"
 			/>

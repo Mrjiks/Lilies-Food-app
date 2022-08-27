@@ -1,23 +1,22 @@
-import specialFoodOne from './components/assets/specialFoodOne.svg';
-import specialFoodTwo from './components/assets/specialFoodTwo.svg';
-import specialFoodThree from './components/assets/specialFoodThree.svg';
-
+import featuredfoodOne from './components/assets/featuredfoodOne.png';
+import featuredfoodtwo from './components/assets/featuredfoodtwo.png';
+import featurefoodthree from './components/assets/featurefoodthree.png';
 const data = [
 	{
 		id: 1,
-		image: `${specialFoodOne}`,
+		image: `${featuredfoodOne}`,
 		title: 'Stir fry Pasta',
 		desc: 'Stir fry pasta yada yada yada because of Sesan',
 	},
 	{
 		id: 2,
-		image: `${specialFoodTwo}`,
+		image: `${featuredfoodtwo}`,
 		title: 'Stir fry Pasta',
 		desc: 'Stir fry pasta yada yada yada because of Sesan',
 	},
 	{
 		id: 3,
-		image: `${specialFoodThree}`,
+		image: `${featurefoodthree}`,
 		title: 'Stir fry Pasta',
 		desc: 'Stir fry pasta yada yada yada because of Sesan',
 	},
@@ -26,21 +25,21 @@ const data = [
 const dashboarddata = [
 	{
 		id: 1,
-		image: `${specialFoodOne}`,
+		image: `${featuredfoodOne}`,
 		title: 'Stir fry Pasta',
 		desc: 'Stir fry pasta yada yada yada because of Sesan',
 		price: 'N 1000.00',
 	},
 	{
 		id: 2,
-		image: `${specialFoodTwo}`,
+		image: `${featuredfoodtwo}`,
 		title: 'Stir fry Pasta',
 		desc: 'Stir fry pasta yada yada yada because of Sesan',
 		price: 'N 1000.00',
 	},
 	{
 		id: 3,
-		image: `${specialFoodThree}`,
+		image: `${featurefoodthree}`,
 		title: 'Stir fry Pasta',
 		desc: 'Stir fry pasta yada yada yada because of Sesan',
 		price: 'N 1000.00',
@@ -49,21 +48,21 @@ const dashboarddata = [
 	////////////////////////////////////////////
 	{
 		id: 4,
-		image: `${specialFoodOne}`,
+		image: `${featuredfoodOne}`,
 		title: 'Stir fry Pasta',
 		desc: 'Stir fry pasta yada yada yada because of Sesan',
 		price: 'N 1000.00',
 	},
 	{
 		id: 5,
-		image: `${specialFoodTwo}`,
+		image: `${featuredfoodtwo}`,
 		title: 'Stir fry Pasta',
 		desc: 'Stir fry pasta yada yada yada because of Sesan',
 		price: 'N 1000.00',
 	},
 	{
 		id: 6,
-		image: `${specialFoodThree}`,
+		image: `${featurefoodthree}`,
 		title: 'Stir fry Pasta',
 		desc: 'Stir fry pasta yada yada yada because of Sesan',
 		price: 'N 1000.00',
@@ -73,7 +72,7 @@ const dashboarddata = [
 const cartdata = [
 	{
 		id: 1,
-		image: `${specialFoodOne}`,
+		image: `${featuredfoodOne}`,
 		itemName: 'Stir fry Pasta',
 		desc: 'Stir fry pasta yada yada yada because of Sesan',
 		price: 1000.0,
@@ -81,7 +80,7 @@ const cartdata = [
 	},
 	{
 		id: 2,
-		image: `${specialFoodTwo}`,
+		image: `${featuredfoodtwo}`,
 		itemName: 'Stir fry Pasta',
 		desc: 'Stir fry pasta yada yada yada because of Sesan',
 		price: 1000.0,
@@ -89,7 +88,7 @@ const cartdata = [
 	},
 	{
 		id: 3,
-		image: `${specialFoodThree}`,
+		image: `${featurefoodthree}`,
 		itemName: 'Stir fry Pasta',
 		desc: 'Stir fry pasta yada yada yada because of Sesan',
 		price: 1000.0,
@@ -98,7 +97,7 @@ const cartdata = [
 
 	{
 		id: 4,
-		image: `${specialFoodOne}`,
+		image: `${featuredfoodOne}`,
 		itemName: 'Stir fry Pasta',
 		desc: 'Stir fry pasta yada yada yada because of Sesan',
 		price: 1000.0,
@@ -106,7 +105,7 @@ const cartdata = [
 	},
 	{
 		id: 5,
-		image: `${specialFoodTwo}`,
+		image: `${featuredfoodtwo}`,
 		itemName: 'Stir fry Pasta',
 		desc: 'Stir fry pasta yada yada yada because of Sesan',
 		price: 1000.0,
