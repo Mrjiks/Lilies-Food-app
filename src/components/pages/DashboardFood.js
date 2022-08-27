@@ -2,7 +2,7 @@ import React from 'react';
 
 const Dashboardfood = ({ image, title, desc, price }) => {
 	return (
-		<div className="foodbox-wrapper">
+		<div className="foodbox-wrapper" style={{ margin: '2rem' }}>
 			<img src={image} alt="" className="feature-image" />
 			<h1 className="feature-heading">{title}</h1>
 			<p className="feature-desc">{desc}</p>

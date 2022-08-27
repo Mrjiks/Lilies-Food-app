@@ -271,22 +271,23 @@ button {
 	justify-content: space-between;
 	align-items: center;
 	background-color: #f7f7f7;
+	padding: 2rem;
 }
 /* Dashboard Header */
 .NavHeader-margin {
-	margin: 3rem;
+	margin-bottom: 3rem;
 }
 /* dasboardBox */
 .dasboardBox {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 3rem;
-
-	/* margin-top: 3rem; */
+	gap: 2rem;
 	background: #ffffff;
 }
+
+/* .feature-wrapper {
+} */
 .foodboox-wrapper {
-	display: flex;
 	width: 240px;
 	height: 307px;
 
@@ -308,10 +309,12 @@ button {
 }
 
 /*! Hide DashBard */
-.hide {
-	display: none;
+/* .hide {
+	visibility: hidden;
+} */
+.sidebar-cart-wrapper {
+	display: flex;
 }
-
 /*? **************** Modal components stylings ************/
 .common-btn {
 	width: 479px;
@@ -350,7 +353,7 @@ button {
 	justify-content: center;
 }
 
-/*? ************************* Main Modal container ******** */
+/*? ************ Main Modal container ******** */
 
 /*!Hide Modal  */
 .modal {

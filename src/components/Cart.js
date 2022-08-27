@@ -6,14 +6,12 @@ import Cartlist from './Cartlist';
 
 const Cart = () => {
 	return (
-		<>
-			<div>
-				{cartdata &&
-					cartdata?.map(item => {
-						return <Cartlist key={cartdata.id} {...item}></Cartlist>;
-					})}
-			</div>
-		</>
+		<div>
+			{cartdata &&
+				cartdata?.map(item => {
+					return <Cartlist key={item.id} {...item}></Cartlist>;
+				})}
+		</div>
 	);
 };
 

@@ -1,7 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 export const SignUpage = ({ title, login, image, olduser, oldUserLogin }) => {
+	const [form, setForm] = useState({
+		name: '',
+		email: '',
+		password: '',
+	});
+
+	const handleChange = e => {
+		setForm({ ...form, [e.target.name]: e.target.value });
+	};
+	const handleSubmit = e => {
+		e.preventDefault();
+		localStorage.setItem('user', JSON.stringify(form));
+		console.log(form);
+		setInterval(() => {
+			window.location = '/login';
+		}, 1500);
+	};
+
 	return (
 		<section className="signuppage">
 			<div>
@@ -10,16 +29,29 @@ export const SignUpage = ({ title, login, image, olduser, oldUserLogin }) => {
 
 			<div className="form-wrapper">
 				<h1 className="form-title">{title}</h1>
-				<form action="">
-					<input type="text" placeholder="Your First Name" name="name" />
-					<input type="email" name="email" placeholder="Your Email address" />
+				<form onSubmit={handleSubmit}>
+					<input
+						onChange={handleChange}
+						id="name"
+						placeholder="Your First Name"
+						type="text"
+						name="name"
+					/>
+
+					<input
+						type="email"
+						name="email"
+						placeholder="Your Email address"
+						id="email"
+						onChange={handleChange}
+					/>
 					<input
 						type="password"
 						name="password"
-						id=""
+						id="password"
 						placeholder="Your Password"
+						onChange={handleChange}
 					/>
-
 					<button type="submit">{login}</button>
 				</form>
 				<div className="form-support">

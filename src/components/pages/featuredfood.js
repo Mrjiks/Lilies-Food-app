@@ -11,3 +11,5 @@ const Featuredfood = ({ image, title, desc }) => {
 };
 
 export default Featuredfood;
+
+// className="food-card"

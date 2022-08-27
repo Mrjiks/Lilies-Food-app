@@ -7,6 +7,7 @@ export const StyledNav = styled.nav`
 	}
 	a:hover {
 		text-decoration: underline;
+		filter: drop-shadow(0 0 0.4em #e2b887);
 	}
 	.signup {
 		height: 30px;

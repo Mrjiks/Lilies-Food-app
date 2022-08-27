@@ -10,7 +10,7 @@ const Featured = () => {
 			<div className="special-food-info">
 				{data &&
 					data?.map(item => {
-						return <Featuredfood key={data.id} {...item}></Featuredfood>;
+						return <Featuredfood key={item.id} {...item}></Featuredfood>;
 					})}
 			</div>
 		</StyledFeatured>

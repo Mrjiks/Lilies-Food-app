@@ -1,6 +1,4 @@
 import React from 'react';
-
-import { StyledFeatured } from './styles/Featured.styled';
 import { dashboarddata } from '../data.js';
 import DashboardFood from './pages/DashboardFood';
 

@@ -39,7 +39,7 @@ export const Flex = styled.div`
 			width: 10.608rem;
 			height: 4.188rem;
 		}
-		.logo:hover {
+		.logo:hovers {
 			filter: drop-shadow(0 0 0.3em #fbddbb);
 		}
 	}
