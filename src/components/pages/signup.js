@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const SignUpage = ({ title, login, image, olduser, oldUserLogin }) => {
 	const [form, setForm] = useState({
@@ -15,7 +17,8 @@ export const SignUpage = ({ title, login, image, olduser, oldUserLogin }) => {
 	const handleSubmit = e => {
 		e.preventDefault();
 		localStorage.setItem('user', JSON.stringify(form));
-		console.log(form);
+
+		toast.success('Thanks Joining Us 😍');
 		setInterval(() => {
 			window.location = '/login';
 		}, 1500);

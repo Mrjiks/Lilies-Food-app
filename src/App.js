@@ -7,10 +7,13 @@ import Signup from './components/Signup';
 import Footer from './components/Footer';
 import Dashboard from './components/Dashboard.js';
 import Modal from './components/Modal.js';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 	return (
 		<>
+			<ToastContainer />
 			<Container>
 				<Modal />
 				<Router>

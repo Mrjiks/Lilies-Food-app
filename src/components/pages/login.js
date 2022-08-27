@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const Login = ({ title, login, image, create, forgot }) => {
 	const [loginData, setLoginData] = useState({
@@ -21,9 +23,10 @@ export const Login = ({ title, login, image, create, forgot }) => {
 		) {
 			setInterval(() => {
 				window.location = '/DashboardFood';
-			}, 1500);
+			}, 1000);
+			toast.success('Logged in Successfully');
 		} else {
-			alert('Wrong details');
+			toast.error('Wrong email or password!');
 		}
 	};
 	return (

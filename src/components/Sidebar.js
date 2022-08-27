@@ -4,12 +4,15 @@ import dashboardicon from './assets/dashboardicon.png';
 import profileicon from './assets/profileicon.svg';
 import carticon from './assets/carticon.png';
 import Vector from './assets/Vector.png';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
 	return (
 		<div className="sidebarcontainer">
 			<div className="sidebar-logo  side-row">
-				<img src={Vector} alt="dashboard" />
+				<Link to="/">
+					<img src={Vector} alt="dashboard" />
+				</Link>
 			</div>
 			<div>
 				<div className="dashboard-header side-row">
