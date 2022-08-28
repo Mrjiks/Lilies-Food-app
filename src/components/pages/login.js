@@ -33,7 +33,7 @@ export const Login = ({ title, login, image, create, forgot }) => {
 	return (
 		<section className="loginpage" id="signin">
 			<div>
-				<img src={image} alt="" />
+				<img src={image} alt="" className="form-imge" />
 			</div>
 
 			<div className="form-wrapper">

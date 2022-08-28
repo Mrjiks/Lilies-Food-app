@@ -43,4 +43,49 @@ export const Flex = styled.div`
 			filter: drop-shadow(0 0 0.3em #fbddbb);
 		}
 	}
+
+	@media only screen and (max-width: 320px) {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: space-between;
+
+		margin: 0 auto;
+
+		.logo-wrapper {
+			display: none;
+			h3 {
+				margin-left: 1.2rem;
+				color: rgba(255, 255, 255, 1);
+			}
+			.logo {
+				width: 5rem;
+				height: 4.188rem;
+			}
+			.logo:hover {
+				filter: drop-shadow(0 0 0.3em #fbddbb);
+			}
+		}
+		.hero-image {
+			margin-top: 3rem;
+		}
+		.hero-text {
+			width: 100%;
+			margin: 0 auto;
+			text-align: center;
+			margin-top: 3rem;
+
+			h1 {
+				font-weight: 700;
+				font-size: 30px;
+				line-height: 180%;
+			}
+			p {
+				text-align: center;
+			}
+		}
+		.hero-pitch-full {
+			margin-right: 3rem;
+		}
+	}
 `;

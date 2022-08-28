@@ -18,4 +18,15 @@ export const StyledFeatured = styled.section`
 		text-align: center;
 		margin-top: 2rem;
 	}
+
+	@media only screen and (max-width: 320px) {
+		.special-food-info {
+			display: flex;
+			flex-direction: column;
+			gap: 5rem;
+			justify-content: center;
+			text-align: center;
+			margin-top: 2rem;
+		}
+	}
 `;

@@ -27,7 +27,7 @@ export const SignUpage = ({ title, login, image, olduser, oldUserLogin }) => {
 	return (
 		<section className="signuppage">
 			<div>
-				<img src={image} alt="" />
+				<img src={image} alt="" className="form-imge" />
 			</div>
 
 			<div className="form-wrapper">

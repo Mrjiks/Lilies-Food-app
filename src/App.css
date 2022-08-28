@@ -181,7 +181,7 @@ p {
 .footer-logo:hover {
 	filter: drop-shadow(0 0 0.3em #fbddbb);
 }
-/* Login Page */
+/*? Login Pages */
 .loginpage,
 .signuppage {
 	display: grid;
@@ -379,4 +379,252 @@ button {
 
 button:hover {
 	cursor: pointer;
+}
+
+/*! Media Queries */
+
+@media only screen and (max-width: 320px) {
+	/*? Hero Section CSS */
+	.hero-image {
+		height: auto;
+		width: auto;
+	}
+	.hero-text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: auto;
+		height: auto;
+		margin-top: 2rem;
+	}
+
+	.hero-text h1,
+	p {
+		margin-bottom: 2.5rem;
+	}
+
+	.special-food-info {
+		display: flex;
+		flex-direction: column;
+		gap: 5rem;
+		justify-content: center;
+		text-align: center;
+		margin-top: 2rem;
+	}
+
+	.flexmobile {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	/*! Footer Mobile */
+	.footer-section {
+		margin-top: 10rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0 auto;
+		background: #0b0d17;
+		width: 100%;
+	}
+	.footer-item-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		width: 100%;
+	}
+	.footer-item-wrapper h1 {
+		color: #fbddbb;
+		text-align: left;
+	}
+
+	.downloads {
+		display: flex;
+		flex-direction: column;
+	}
+	.downloads img {
+		margin-bottom: 1rem;
+		width: 6rem;
+	}
+
+	.footer-copyright {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		padding-bottom: 2rem;
+		color: rgba(251, 221, 187, 1);
+	}
+	.socials {
+		display: flex;
+		justify-content: space-around;
+	}
+	.socials .fa-icons {
+		margin: 10px;
+	}
+
+	/*? CTA MOBILE CSS */
+	.cta-section {
+		margin-top: 1rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+	.cta-heading {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 25px;
+		line-height: 33px;
+		margin-bottom: 32px;
+		color: #fbddbb;
+		text-align: center;
+	}
+	.cta-desc {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 33px;
+		color: rgba(255, 255, 255, 0.95);
+	}
+	.cta-input {
+		width: 280px;
+		height: 51px;
+		background: #f7f7f7;
+		border: 1px solid #b3b3b3;
+		border-radius: 5px;
+		/* margin-bottom: 2rem; */
+	}
+	.cta-button {
+		width: 182px;
+		height: 51px;
+		background: #fbddbb;
+		border-radius: 5px;
+		margin: 2rem;
+	}
+
+	/*? Feature Mobile Section CSS */
+	.special-food-heading {
+		margin-top: 1rem;
+	}
+	.special-food-heading h1 {
+		color: #fbddbb;
+		text-align: center;
+		margin: 0 auto;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 2.063rem;
+		line-height: 185%;
+	}
+	.special-food-heading p {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 1.125rem;
+		line-height: 185%;
+		text-align: center;
+		color: rgba(255, 255, 255, 0.83);
+		margin-top: 2rem;
+	}
+
+	.feature-wrapper h1 {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 1.688rem;
+		line-height: 2.063rem;
+		color: #fbddbb;
+		margin-top: 2.188rem;
+		margin-bottom: 1.313rem;
+	}
+
+	.feature-wrapper p {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 33px;
+		color: rgba(255, 255, 255, 0.83);
+		margin-bottom: 2rem;
+	}
+	.feature-image {
+		object-fit: cover;
+		margin-top: -2rem;
+	}
+
+	/*? Mobile Login Pages */
+	.loginpage,
+	.signuppage {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		width: 100%;
+	}
+	.form-imge {
+		width: 100%;
+		max-width: 0 auto;
+		margin-bottom: 3rem;
+	}
+	.form-wrapper {
+		display: flex;
+		flex-direction: column;
+		background-color: white;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.form-wrapper form {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	.form-wrapper form input,
+	button {
+		width: 50%;
+		height: 71px;
+		background: rgba(255, 255, 255, 0.83);
+		border: 1px solid rgba(251, 221, 187, 0.51);
+		border-radius: 5px;
+	}
+
+	.form-wrapper input {
+		margin-bottom: 48px;
+	}
+	.form-wrapper button {
+		width: 50%;
+		background: rgba(0, 48, 46, 1);
+		color: rgba(251, 221, 187, 1);
+	}
+
+	.form-wrapper .form-title {
+		margin: 0 auto;
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 27px;
+		line-height: 33px;
+		color: #00302e;
+	}
+
+	.form-support {
+		display: block;
+
+		margin-top: 2rem;
+	}
+
+	::placeholder {
+		color: rgb(224, 156, 78);
+	}
+
+	.react-link {
+		text-decoration: none;
+		color: #00302e;
+	}
+	.react-link-btn :hover {
+		cursor: pointer;
+	}
 }

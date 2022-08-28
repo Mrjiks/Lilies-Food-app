@@ -21,11 +21,11 @@ const Home = () => {
 				<Header />
 				<Flex>
 					<div className="hero-text">
-						<h1>
+						<h1 className="hero-pitch">
 							Order <span>food </span>anytime,
 							<br /> anywhere
 						</h1>
-						<p>
+						<p className="hero-pitch-full">
 							Browse from our list of specials to place your order and have food
 							<br />
 							delivered to you in no time. Affordable, tasty and fast!
