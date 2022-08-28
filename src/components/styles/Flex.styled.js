@@ -44,7 +44,7 @@ export const Flex = styled.div`
 		}
 	}
 
-	@media only screen and (max-width: 320px) {
+	@media only screen and (max-width: 768px) {
 		display: flex;
 		flex-direction: column-reverse;
 		align-items: center;

@@ -29,7 +29,7 @@ export const StyledNav = styled.nav`
 		color: rgba(0, 48, 46, 1);
 	}
 
-	@media only screen and (max-width: 320px) {
+	@media only screen and (max-width: 768px) {
 		.signup {
 			height: 30px;
 			color: rgba(0, 48, 46, 1);

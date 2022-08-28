@@ -13,7 +13,7 @@ export const Container = styled.div`
 		align-self: flex-start;
 	}
 
-	@media only screen and (max-width: 320px) {
+	@media only screen and (max-width: 768px) {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;

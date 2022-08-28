@@ -19,7 +19,7 @@ export const StyledFeatured = styled.section`
 		margin-top: 2rem;
 	}
 
-	@media only screen and (max-width: 320px) {
+	@media only screen and (max-width: 768px) {
 		.special-food-info {
 			display: flex;
 			flex-direction: column;
