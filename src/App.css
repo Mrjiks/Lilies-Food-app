@@ -42,12 +42,12 @@ h6 {
 
 .hero-text h1,
 p {
-	margin-bottom: 1.313rem;
+	margin-bottom: 2.5rem;
 }
 
 /*? Feature Section CSS */
 .special-food-heading {
-	margin-top: 10rem;
+	margin-top: 20rem;
 }
 .special-food-heading h1 {
 	color: white;
