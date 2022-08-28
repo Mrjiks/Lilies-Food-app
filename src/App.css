@@ -29,13 +29,15 @@ h6 {
 
 /*? Hero Section CSS */
 .hero-image {
-	height: 400px;
+	height: 200px;
 	width: 200px;
 	margin-right: 3rem;
+	margin-top: 5rem;
 }
 .hero-text {
 	height: 10.438rem;
 	width: 40.625rem;
+	margin-top: 10rem;
 }
 
 .hero-text h1,

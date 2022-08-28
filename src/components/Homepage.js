@@ -1,6 +1,6 @@
 import React from 'react';
 import { Flex } from './styles/Flex.styled';
-import heroimage from './assets/heroimage.svg';
+import featuredfoodOne from './assets/featuredfoodOne.png';
 import google from './assets/google.svg';
 import apple from './assets/apple.svg';
 import Button from './Button';
@@ -37,7 +37,7 @@ const Home = () => {
 						</div>
 					</div>
 					<div>
-						<img src={heroimage} alt="" className="hero-image" />
+						<img src={featuredfoodOne} alt="" className="hero-image" />
 					</div>
 				</Flex>
 
