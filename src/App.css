@@ -532,10 +532,6 @@ button:hover {
 		color: rgba(255, 255, 255, 0.83);
 		margin-bottom: 2rem;
 	}
-	.feature-image {
-		object-fit: cover;
-		margin-top: -2rem;
-	}
 
 	/*? Mobile Login Pages */
 	.loginpage,
@@ -608,5 +604,123 @@ button:hover {
 	}
 	.react-link-btn :hover {
 		cursor: pointer;
+	}
+
+	/* CARTLIST MOBILE */
+	/*? ********************Dashboard CSS ********************/
+
+	/* Sider  */
+	.sidebarcontainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		background: #fbfbfb;
+	}
+
+	.side-row {
+		display: flex;
+
+		margin: 2rem;
+	}
+	.sidebarcontainer h4 {
+		margin-right: 1rem;
+		margin-left: 1rem;
+		opacity: 0.8;
+	}
+
+	.sidebar-logo {
+		color: #00302e;
+	}
+	/* dashboardcontainer */
+
+	.NavHeader {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #f7f7f7;
+		padding: 2rem;
+	}
+	/* Dashboard Header */
+	.NavHeader-margin {
+		margin-bottom: 1rem;
+	}
+	/* dasboardBox */
+	.dasboardBox {
+		display: flex;
+		flex-direction: column;
+		background: #ffffff;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	.foodboox-wrapper {
+		width: 140px;
+		height: 307px;
+	}
+
+	.price-and-item-btn {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+
+		/* margin-right: 1rem; */
+	}
+
+	/* Main DashBoard Wrapper */
+
+	.dashboard-wrapper {
+		display: flex;
+		background-color: #f7f7f7;
+	}
+
+	.feature-image {
+		object-fit: cover;
+		margin-top: -2rem;
+		width: 100%;
+	}
+	/*? Sidebar */
+
+	.sidebar-cart-wrapper {
+		display: flex;
+	}
+	/*? **************** Modal components stylings ************/
+	.common-btn {
+		width: 479px;
+		height: 60px;
+		background: rgba(0, 48, 46, 1);
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 27px;
+		text-align: center;
+		color: #f3c294;
+	}
+
+	.modal-name {
+		width: 82px;
+		height: 33px;
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 17px;
+		line-height: 33px;
+		color: #00302e;
+		margin-bottom: 2rem;
+	}
+
+	.cartlist-container {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 1rem;
+	}
+
+	.item-info-wrapper {
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+		align-items: center;
 	}
 }
