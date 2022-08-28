@@ -40,7 +40,7 @@ const Footer = () => {
 					</a>
 				</div>
 				<div>
-					<p>All rights reserved © Harrison E. Obetta 2022</p>
+					<p>All rights reserved © Harrison E. , 2022</p>
 				</div>
 				<p>Designed by Jiks</p>
 				<div className="socials">

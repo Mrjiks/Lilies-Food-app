@@ -383,9 +383,13 @@ button:hover {
 
 /*! Media Queries */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 320px) {
 	/*? Mobbile 320px Section CSS */
-
+	.App {
+		text-align: center;
+		width: 100%;
+		margin: 0;
+	}
 	.special-food-info {
 		display: flex;
 		flex-direction: column;
@@ -411,10 +415,13 @@ button:hover {
 		background: #0b0d17;
 		width: 100%;
 	}
+	.footer-section h1 {
+		text-align: center;
+	}
 	.footer-item-wrapper {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		/* justify-content: center; */
 
 		width: 100%;
 	}
@@ -445,6 +452,7 @@ button:hover {
 	}
 	.socials {
 		display: flex;
+
 		justify-content: space-around;
 	}
 	.socials .fa-icons {
@@ -485,11 +493,12 @@ button:hover {
 		/* margin-bottom: 2rem; */
 	}
 	.cta-button {
-		width: 182px;
+		width: 260px;
 		height: 51px;
 		background: #fbddbb;
 		border-radius: 5px;
-		margin: 2rem;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
 	}
 
 	/*? Feature Mobile Section CSS */
