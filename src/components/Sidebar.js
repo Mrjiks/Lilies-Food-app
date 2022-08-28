@@ -38,9 +38,9 @@ const Sidebar = () => {
 					<div>
 						<img src={carticon} alt="cart" />
 					</div>
-					<a href="/dashboard">
-						<h4>Your cart </h4>
-					</a>
+
+					<h4>Your cart </h4>
+
 					<span>6</span>
 				</div>
 			</div>
