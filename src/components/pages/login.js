@@ -44,6 +44,7 @@ export const Login = ({ title, login, image, create, forgot }) => {
 						name="email"
 						placeholder="Your Email address"
 						onChange={handleChange}
+						required
 					/>
 					<input
 						type="password"
@@ -51,6 +52,7 @@ export const Login = ({ title, login, image, create, forgot }) => {
 						id=""
 						placeholder="Your Password"
 						onChange={handleChange}
+						required
 					/>
 
 					<button type="submit">{login}</button>
