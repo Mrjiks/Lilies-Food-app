@@ -31,7 +31,7 @@ const Home = () => {
 							delivered to you in no time. Affordable, tasty and fast!
 						</p>
 
-						<div className="buttons">
+						<div className="hero-buttons">
 							<Button text={google} />
 							<Button text={apple} />
 						</div>

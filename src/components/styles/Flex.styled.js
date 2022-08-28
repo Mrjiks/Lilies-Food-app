@@ -66,26 +66,49 @@ export const Flex = styled.div`
 				filter: drop-shadow(0 0 0.3em #fbddbb);
 			}
 		}
+
 		.hero-image {
 			margin-top: 3rem;
-		}
-		.hero-text {
-			width: 100%;
-			margin: 0 auto;
+			height: auto;
+			width: auto;
 			text-align: center;
-			margin-top: 3rem;
-
-			h1 {
-				font-weight: 700;
-				font-size: 30px;
-				line-height: 180%;
-			}
-			p {
-				text-align: center;
-			}
 		}
-		.hero-pitch-full {
+
+		/*-----------HERO SECTION-----  */
+		.hero-text {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			width: 100vw;
+			height: auto;
+			margin-top: 3rem;
+		}
+
+		.hero-pitch {
+			margin-bottom: 2.5rem;
+			text-align: center;
+			font-weight: 700;
+			font-size: 30px;
+			line-height: 180%;
 			margin-right: 3rem;
+		}
+
+		.hero-pitch-full {
+			text-align: center;
+			margin-right: 3rem;
+		}
+		.hero-buttons {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-right: 5rem;
+			margin-left: 5rem;
+			img {
+				width: 100px;
+				text-align: end;
+				margin-right: 3rem;
+			}
 		}
 	}
 `;

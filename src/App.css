@@ -384,24 +384,7 @@ button:hover {
 /*! Media Queries */
 
 @media only screen and (max-width: 768px) {
-	/*? Hero Section CSS */
-	.hero-image {
-		height: auto;
-		width: auto;
-	}
-	.hero-text {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: auto;
-		height: auto;
-		margin-top: 2rem;
-	}
-
-	.hero-text h1,
-	p {
-		margin-bottom: 2.5rem;
-	}
+	/*? Mobbile 320px Section CSS */
 
 	.special-food-info {
 		display: flex;
@@ -519,7 +502,6 @@ button:hover {
 		margin: 0 auto;
 		font-style: normal;
 		font-weight: 600;
-		line-height: 2.063rem;
 		line-height: 185%;
 	}
 	.special-food-heading p {
