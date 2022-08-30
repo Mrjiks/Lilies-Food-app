@@ -733,12 +733,115 @@ button:hover {
 		margin: 0 auto;
 		align-items: center;
 	}
-	cta-form {
+}
+
+@media only screen and (max-width: 844px) and (orientation: landscape) {
+	/*? Hero Section CSS */
+	.hero-image {
+		height: 200px;
+		width: 200px;
+		margin-left: 1rem;
+		margin-top: 3rem;
+	}
+	.hero-text {
+		height: 5rem;
+		width: 40rem;
+		margin-top: 1rem;
+	}
+
+	.hero-text h1,
+	p {
+		margin-bottom: 2.5rem;
+	}
+
+	/*? Feature Section CSS */
+	.special-food-heading {
+		margin-top: 20rem;
+	}
+	.special-food-heading h1 {
+		color: white;
+		text-align: center;
+		margin: 0 auto;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 2rem;
+	}
+	.special-food-heading p {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 1.125rem;
+		line-height: 183%;
+		text-align: center;
+		color: rgba(255, 255, 255, 0.83);
+		margin-top: 2rem;
+	}
+
+	.feature-wrapper h1 {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 1.688rem;
+		line-height: 2.063rem;
+		color: #fbddbb;
+		margin-top: 2.188rem;
+		margin-bottom: 1.313rem;
+	}
+
+	.feature-wrapper p {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 33px;
+		color: rgba(255, 255, 255, 0.83);
+	}
+	.feature-image {
+		object-fit: cover;
+	}
+
+	/*? CTA CSS */
+	.cta-section {
+		margin-top: 4rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.cta-heading {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 55px;
+		margin-bottom: 32px;
+		color: #fbddbb;
+	}
+	.cta-desc {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 33px;
+		color: rgba(255, 255, 255, 0.95);
+		margin-right: 3rem;
+	}
+	.cta-input {
+		width: 299px;
+		height: 51px;
+		background: #f7f7f7;
+		border: 1px solid #b3b3b3;
+		border-radius: 5px;
+		margin-right: 8px;
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+	.cta-button {
+		width: 299px;
+		height: 51px;
+		background: #fbddbb;
+		border-radius: 5px;
+	}
+	.special-food-info {
 		display: flex;
 		flex-direction: column;
+		gap: 1rem;
 		justify-content: center;
-		align-items: center;
-		margin: 0 auto;
-		background-color: red;
+		text-align: center;
+		margin-top: 2rem;
 	}
 }
