@@ -1,4 +1,5 @@
 import Footer from 'components/Footer';
+import { Container } from 'components/styles/Container.styled';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import './App.css';
@@ -11,7 +12,9 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<React.StrictMode>
-		<App />
+		<Container>
+			<App />
+		</Container>
 		<Footer />
 	</React.StrictMode>,
 );
