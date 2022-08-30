@@ -35,7 +35,7 @@ h6 {
 	margin-top: 10rem;
 }
 .hero-text {
-	height: 10.438rem;
+	height: 10rem;
 	width: 40.625rem;
 	margin-top: 10rem;
 }
@@ -117,6 +117,7 @@ p {
 	border: 1px solid #b3b3b3;
 	border-radius: 5px;
 	margin-right: 8px;
+	text-align: center;
 }
 .cta-button {
 	width: 182px;
