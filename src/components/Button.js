@@ -4,7 +4,7 @@ import { StyledButton } from './styles/Button.styled';
 const Button = ({ text }) => {
 	return (
 		<StyledButton>
-			<a href="#">
+			<a href="/">
 				<img src={text} alt="" className="playstores" />
 			</a>
 		</StyledButton>

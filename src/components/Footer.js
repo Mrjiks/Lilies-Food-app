@@ -3,7 +3,6 @@ import { FaTwitter, FaInstagram, FaYoutube, FaGithubAlt } from 'react-icons/fa';
 import apple from '../components/assets/apple.svg';
 import google from '../components/assets/google.svg';
 import logoTwo from '../components/assets/logoTwo.svg';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
 	return (

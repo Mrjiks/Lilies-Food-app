@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Container } from './components/styles/Container.styled.js';
 import './App.css';
 import Home from './components/Homepage';
@@ -7,7 +7,7 @@ import Signup from './components/Signup';
 import Footer from './components/Footer';
 import Dashboard from './components/Dashboard.js';
 import Modal from './components/Modal.js';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
