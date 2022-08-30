@@ -4,7 +4,7 @@ import './App.css';
 import Home from './components/Homepage';
 import Register from './components/Register';
 import Signup from './components/Signup';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import Dashboard from './components/Dashboard.js';
 import Modal from './components/Modal.js';
 import { ToastContainer } from 'react-toastify';

@@ -412,7 +412,6 @@ button:hover {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		margin: 0 auto;
 		background: #0b0d17;
 		width: 100%;
 	}
@@ -422,13 +421,16 @@ button:hover {
 	.footer-item-wrapper {
 		display: flex;
 		flex-direction: column;
-		/* justify-content: center; */
-
+		justify-content: center;
 		width: 100%;
+		align-items: center;
 	}
 	.footer-item-wrapper h1 {
 		color: #fbddbb;
-		text-align: left;
+		text-align: center;
+	}
+	.footer-item {
+		text-align: center;
 	}
 
 	.downloads {
