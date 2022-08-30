@@ -205,11 +205,11 @@ p {
 button {
 	width: 488px;
 	height: 71px;
-	margin-left: 81px;
-	margin-right: 81px;
+
 	background: rgba(255, 255, 255, 0.83);
 	border: 1px solid rgba(251, 221, 187, 0.51);
 	border-radius: 5px;
+	margin: 0 auto;
 }
 
 .form-wrapper input {
@@ -490,15 +490,16 @@ button:hover {
 		background: #f7f7f7;
 		border: 1px solid #b3b3b3;
 		border-radius: 5px;
-		/* margin-bottom: 2rem; */
+		text-align: center;
 	}
 	.cta-button {
-		width: 260px;
+		width: 280px;
 		height: 51px;
 		background: #fbddbb;
 		border-radius: 5px;
 		margin-top: 2rem;
 		margin-bottom: 2rem;
+		text-align: center;
 	}
 
 	/*? Feature Mobile Section CSS */
@@ -731,5 +732,13 @@ button:hover {
 		justify-content: center;
 		margin: 0 auto;
 		align-items: center;
+	}
+	cta-form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		background-color: red;
 	}
 }

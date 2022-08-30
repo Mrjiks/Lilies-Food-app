@@ -11,17 +11,19 @@ const CallToAction = () => {
 				</p>
 			</div>
 			<div>
-				<form>
-					<input
-						className="cta-input"
-						type="email"
-						name="email"
-						id="email"
-						placeholder="youremail@email.com"
-					/>
-					<button className="cta-button" type="submit">
-						Get notified
-					</button>
+				<form className="cta-form">
+					<div>
+						<input
+							className="cta-input"
+							type="email"
+							name="email"
+							id="email"
+							placeholder="youremail@email.com"
+						/>
+						<button className="cta-button" type="submit">
+							Get notified
+						</button>
+					</div>
 				</form>
 			</div>
 		</section>
