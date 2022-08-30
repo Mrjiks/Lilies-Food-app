@@ -575,36 +575,42 @@ button:hover {
 	}
 	.form-wrapper form input,
 	button {
-		width: 50%;
-		height: 71px;
+		width: 100%;
+		height: 61px;
 		background: rgba(255, 255, 255, 0.83);
-		border: 1px solid rgba(251, 221, 187, 0.51);
+		border: 2px solid rgba(251, 221, 187, 0.51);
 		border-radius: 5px;
+	}
+	.form-wrapper form input {
+		margin-bottom: 33px;
+		text-align: center;
 	}
 
 	.form-wrapper input {
 		margin-bottom: 48px;
 	}
 	.form-wrapper button {
-		width: 50%;
+		width: 100%;
 		background: rgba(0, 48, 46, 1);
 		color: rgba(251, 221, 187, 1);
 	}
 
 	.form-wrapper .form-title {
-		margin: 0 auto;
 		font-family: 'Poppins';
 		font-style: normal;
 		font-weight: 600;
 		font-size: 27px;
 		line-height: 33px;
 		color: #00302e;
+		margin-top: 33px;
+		margin-bottom: 33px;
 	}
 
 	.form-support {
-		display: block;
-
-		margin-top: 2rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 2rem;
 	}
 
 	::placeholder {
