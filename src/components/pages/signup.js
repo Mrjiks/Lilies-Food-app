@@ -18,7 +18,9 @@ export const SignUpage = ({ title, login, image, olduser, oldUserLogin }) => {
 		e.preventDefault();
 		localStorage.setItem('user', JSON.stringify(form));
 
-		toast.success('Thanks for Joining Us 😍');
+		toast.success('Thanks for Joining Us 😍', {
+			position: toast.POSITION.TOP_CENTER,
+		});
 		setInterval(() => {
 			window.location = '/login';
 		}, 1500);

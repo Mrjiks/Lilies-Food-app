@@ -25,9 +25,13 @@ export const Login = ({ title, login, image, create, forgot }) => {
 			setInterval(() => {
 				window.location = '/DashboardFood';
 			}, 1000);
-			toast.success('Logged in Successfully');
+			toast.success('Logged in Successfully', {
+				position: toast.POSITION.TOP_CENTER,
+			});
 		} else {
-			toast.error('Wrong email or password!');
+			toast.error('Wrong email or password!', {
+				position: toast.POSITION.TOP_CENTER,
+			});
 		}
 	};
 	return (
@@ -45,6 +49,7 @@ export const Login = ({ title, login, image, create, forgot }) => {
 						placeholder="Your Email address"
 						onChange={handleChange}
 						required
+						className="login-form-desk"
 					/>
 					<input
 						type="password"

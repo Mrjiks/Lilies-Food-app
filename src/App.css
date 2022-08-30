@@ -193,29 +193,22 @@ p {
 .form-wrapper {
 	display: flex;
 	flex-direction: column;
+	background-color: #fff;
 	justify-content: space-evenly;
-	margin: 0 auto;
-	background-color: white;
 }
 .form-wrapper form {
 	display: flex;
 	flex-direction: column;
-	margin: 0 auto;
 }
 .form-wrapper form input,
 button {
 	width: 488px;
 	height: 71px;
-
 	background: rgba(255, 255, 255, 0.83);
 	border: 1px solid rgba(251, 221, 187, 0.51);
 	border-radius: 5px;
-	margin: 0 auto;
 }
 
-.form-wrapper input {
-	margin-bottom: 48px;
-}
 .form-wrapper button {
 	background: rgba(0, 48, 46, 1);
 	color: rgba(251, 221, 187, 1);
@@ -608,6 +601,7 @@ button:hover {
 
 	.form-support {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		margin: 2rem;
