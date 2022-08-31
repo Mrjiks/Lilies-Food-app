@@ -9,16 +9,17 @@ const CartModal = () => {
 			<div className="modal">
 				<ModalTitle modalName={'Your Cart'} />
 				<Cart />
-				<button
+				{/* <button
 					style={{
 						marginRight: 'auto',
 						marginLeft: 'auto',
 						background: 'rgba(0, 48, 46, 1)',
 						color: 'gold',
+						
 					}}
 				>
 					Check
-				</button>
+				</button> */}
 			</div>
 		</Container>
 	);

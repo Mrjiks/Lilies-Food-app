@@ -6,14 +6,8 @@ const Auth = () => {
 	return user;
 };
 const ProtectedRoutes = () => {
-	let userAuth = Auth();
-	return (
-		<div>
-			userAuth?
-			<Outlet />:
-			<Navigate to="/signup" />;
-		</div>
-	);
+	const userAuth = Auth();
+	return userAuth ? <Outlet /> : <Navigate to="/login" />;
 };
 
 export default ProtectedRoutes;

@@ -20,7 +20,6 @@ const Sidebar = () => {
 				onRequestClose={() => setModalIsOpen(false)}
 				style={{
 					overlay: { background: 'grey' },
-					content: { color: 'orangered' },
 				}}
 			>
 				<span onClick={() => setModalIsOpen(false)}>Close X</span>

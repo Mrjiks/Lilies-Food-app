@@ -12,19 +12,18 @@ import ProtectedRoutes from 'components/ProtectedRoutes.js';
 function App() {
 	return (
 		<>
-			<ToastContainer />
 			<Container>
+				<ToastContainer />
 				<Router>
 					<Routes>
 						<Route element={<ProtectedRoutes />}>
 							<Route path="/DashboardFood" element={<Dashboard />} />
+							<Route path="/" element={<Home />} />
 						</Route>
-						<Route path="/" element={<Home />} />
 						<Route path="/login" element={<Register />} />
 						<Route path="/signup" element={<Signup />} />
 					</Routes>
 				</Router>
-				{/* <Footer /> */}
 			</Container>
 		</>
 	);
