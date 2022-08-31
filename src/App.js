@@ -7,6 +7,7 @@ import Signup from './components/Signup';
 import Dashboard from './components/Dashboard.js';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ProtectedRoutes from 'components/ProtectedRoutes.js';
 
 function App() {
 	return (
@@ -15,9 +16,11 @@ function App() {
 			<Container>
 				<Router>
 					<Routes>
+						<Route element={<ProtectedRoutes />}>
+							<Route path="/DashboardFood" element={<Dashboard />} />
+						</Route>
 						<Route path="/" element={<Home />} />
 						<Route path="/login" element={<Register />} />
-						<Route path="/DashboardFood" element={<Dashboard />} />
 						<Route path="/signup" element={<Signup />} />
 					</Routes>
 				</Router>

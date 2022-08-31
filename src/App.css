@@ -199,6 +199,7 @@ p {
 .form-wrapper form {
 	display: flex;
 	flex-direction: column;
+	gap: 3rem;
 }
 .form-wrapper form input,
 button {
@@ -207,6 +208,8 @@ button {
 	background: rgba(255, 255, 255, 0.83);
 	border: 1px solid rgba(251, 221, 187, 0.51);
 	border-radius: 5px;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .form-wrapper button {
