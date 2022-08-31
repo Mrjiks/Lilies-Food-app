@@ -1,21 +1,26 @@
 import React from 'react';
 import { StyledNav } from './styles/NavBar.styled';
 import { Link } from 'react-router-dom';
+import Tippy from '@tippy.js/react';
+import 'tippy.js/dist/tippy.css';
 const NavBar = () => {
 	return (
 		<StyledNav className="sticky-header">
-			<Link to="/">
-				<a href="/" id="home">
-					Home
-				</a>
+			<Link to="/" id="home">
+				Home
 			</Link>
-			<Link to="/login">
-				<a href="/login">Login</a>
-			</Link>
+			<Tippy
+				content={
+					<span span style={{ color: ' #FBDDBB' }}>
+						Login to view Dashboard
+					</span>
+				}
+				arrow={false}
+			>
+				<Link to="/login">Login</Link>
+			</Tippy>
 			<Link to="/signup">
-				<a href="/signup">
-					<button className="signup react-link-btn">Sign Up</button>
-				</a>
+				<button className="signup react-link-btn">Sign Up</button>
 			</Link>
 		</StyledNav>
 	);

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 html {
-	scroll-behavior: smooth;
+	/* scroll-behavior: smooth; */
 	transition: all 1s ease-in;
 }
 * {
@@ -352,7 +352,7 @@ button {
 
 /*!Hide Modal  */
 .modal {
-	display: none;
+	/* display: none; */
 	background: #f7f7f7;
 }
 .item-wrapper {

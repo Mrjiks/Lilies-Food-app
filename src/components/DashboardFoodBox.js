@@ -7,16 +7,20 @@ const DashboardFoodBox = () => {
 	const [count, setCounter] = useState(0);
 
 	const handleClick = () => {
-		setCounter(count + 1);
+		setCounter(() => count + 1);
 	};
 	console.log(count);
 	return (
 		<>
-			<div className="dasboardBox" key={dashboarddata.id}>
+			<div className="dasboardBox">
 				{dashboarddata &&
 					dashboarddata?.map(item => {
 						return (
-							<DashboardFood onClick={handleClick} {...item}></DashboardFood>
+							<DashboardFood
+								onClick={handleClick}
+								{...item}
+								key={item.id}
+							></DashboardFood>
 						);
 					})}
 			</div>

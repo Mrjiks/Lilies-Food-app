@@ -6,7 +6,7 @@ import { Container } from './styles/Container.styled';
 
 const Dashboard = () => {
 	return (
-		<Container className="dashboard-wrapper hide">
+		<Container className="dashboard-wrapper hide relDisplay">
 			<Sidebar />
 			<div>
 				<DashboardHeader />

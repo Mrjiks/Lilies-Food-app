@@ -27,6 +27,7 @@ export const Login = ({ title, login, image, create, forgot }) => {
 			}, 1000);
 			toast.success('Logged in Successfully', {
 				position: toast.POSITION.TOP_CENTER,
+				autoClose: 1000,
 			});
 		} else {
 			toast.error('Wrong email or password!', {
@@ -50,6 +51,7 @@ export const Login = ({ title, login, image, create, forgot }) => {
 						onChange={handleChange}
 						required
 						className="login-form-desk"
+						autoFocus
 					/>
 					<input
 						type="password"

@@ -20,6 +20,7 @@ export const SignUpage = ({ title, login, image, olduser, oldUserLogin }) => {
 
 		toast.success('Thanks for Joining Us 😍', {
 			position: toast.POSITION.TOP_CENTER,
+			autoClose: 1000,
 		});
 		setInterval(() => {
 			window.location = '/login';
@@ -42,6 +43,7 @@ export const SignUpage = ({ title, login, image, olduser, oldUserLogin }) => {
 						type="text"
 						name="name"
 						required
+						autoFocus
 					/>
 
 					<input
