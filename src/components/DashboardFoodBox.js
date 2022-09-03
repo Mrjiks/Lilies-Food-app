@@ -6,10 +6,11 @@ import { useState } from 'react';
 const DashboardFoodBox = () => {
 	const [count, setCounter] = useState(0);
 
-	const handleClick = () => {
-		setCounter(() => count + 1);
+	const handleClick = e => {
+		console.dir(e);
+		setCounter(prevCount => prevCount + 1);
+		console.log(count);
 	};
-	console.log(count);
 	return (
 		<>
 			<div className="dasboardBox">
