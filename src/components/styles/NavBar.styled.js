@@ -8,9 +8,11 @@ export const StyledNav = styled.nav`
 		text-decoration: none;
 		color: rgba(251, 221, 187, 1);
 		padding: 10px;
+		margin-right: 2rem;
 	}
 	a:hover {
-		text-decoration: underline;
+		outline: 1px solid #e1b078;
+		border-radius: 8px;
 		filter: drop-shadow(0 0 0.4em #e2b887);
 	}
 	.signup {
@@ -18,13 +20,9 @@ export const StyledNav = styled.nav`
 		color: rgba(0, 48, 46, 1);
 		border-radius: 0.438rem;
 		background: #e2b887;
-		margin-left: 2rem;
 		width: 100px;
-		/* margin: 0 auto; */
 	}
-	.signup:hover {
-		cursor: pointer;
-	}
+
 	.signup-text {
 		color: rgba(0, 48, 46, 1);
 	}
