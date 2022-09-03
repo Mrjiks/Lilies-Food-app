@@ -20,17 +20,21 @@ const Cartlist = ({ image, itemName, desc, price, quantity }) => {
 
 			<div>
 				<div className="item-qty-header"></div>
-				<h3 item-qty-count>{quantity}</h3>
+				<h3 className="item-qty-count">{quantity}</h3>
 			</div>
 
 			<div>
 				<div className="item-price-header"></div>
-				<h3 item-qty-count>{price}</h3>
+				<h3 className="item-qty-count" item-qty-count>
+					{price}
+				</h3>
 			</div>
 
 			<div>
 				<div className="item-subtotal-header"></div>
-				<h3 item-qty-count>{price * quantity}</h3>
+				<h3 className="item-qty-count" item-qty-count>
+					{price * quantity}
+				</h3>
 			</div>
 
 			<div>

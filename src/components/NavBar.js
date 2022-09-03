@@ -11,9 +11,7 @@ const NavBar = () => {
 			</Link>
 			<Tippy
 				content={
-					<span span style={{ color: ' #FBDDBB' }}>
-						Login to view Dashboard
-					</span>
+					<span style={{ color: ' #FBDDBB' }}>Login to view Dashboard</span>
 				}
 				arrow={false}
 			>
