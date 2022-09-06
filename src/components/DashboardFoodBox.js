@@ -6,26 +6,22 @@ import { useState } from 'react';
 const DashboardFoodBox = () => {
 	const [count, setCounter] = useState(0);
 
-	const handleClick = e => {
-		console.dir(e);
+	const handleClick = () => {
 		setCounter(prevCount => prevCount + 1);
-		console.log(count);
 	};
 	return (
-		<>
-			<div className="dasboardBox">
-				{dashboarddata &&
-					dashboarddata?.map(item => {
-						return (
-							<DashboardFood
-								onClick={handleClick}
-								{...item}
-								key={item.id}
-							></DashboardFood>
-						);
-					})}
-			</div>
-		</>
+		<div className="dasboardBox">
+			{dashboarddata &&
+				dashboarddata?.map(item => {
+					return (
+						<DashboardFood
+							onClick={handleClick}
+							{...item}
+							key={item.id}
+						></DashboardFood>
+					);
+				})}
+		</div>
 	);
 };
 
