@@ -1,13 +1,13 @@
 import React from 'react';
-import { Navigate, Outlet } from 'react-router-dom';
+import {Navigate,Outlet} from 'react-router-dom';
 
-const Auth = () => {
-	let user = JSON.parse(localStorage.getItem('user'));
+const Auth=() => {
+	let user=JSON.parse(localStorage.getItem('user'));
 	return user;
 };
-const ProtectedRoutes = () => {
-	const userAuth = Auth();
-	return userAuth ? <Outlet /> : <Navigate to="/login" />;
+const ProtectedRoutes=() => {
+	const userAuth=Auth(); //returns user with account
+	return userAuth? <Outlet />:<Navigate to="/login" />;
 };
 
 export default ProtectedRoutes;
