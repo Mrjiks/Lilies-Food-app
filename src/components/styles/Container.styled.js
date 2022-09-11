@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 	width: 1440px;
-	max-width: 100%;
-
+	/*max-width: 100%;*/
 	padding: 0 20px;
 	margin: 0 auto;
 	scroll-behavior: smooth;
@@ -13,7 +12,7 @@ export const Container = styled.div`
 		align-self: flex-start;
 	}
 
-	@media only screen and (max-width: 768px) {
+	@media screen and (max-width: 768px) {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;

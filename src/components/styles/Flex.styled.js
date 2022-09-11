@@ -4,7 +4,6 @@ export const Flex = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-
 	margin: 0 auto;
 
 	h1 {
@@ -79,8 +78,7 @@ export const Flex = styled.div`
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-
-			width: 100vw;
+			width: 100%;
 			height: auto;
 			margin-top: 3rem;
 		}
@@ -104,6 +102,7 @@ export const Flex = styled.div`
 			align-items: center;
 			margin-right: 5rem;
 			margin-left: 5rem;
+			
 			img {
 				width: 100px;
 				text-align: end;

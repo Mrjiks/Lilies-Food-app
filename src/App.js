@@ -9,6 +9,8 @@ import {ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ProtectedRoutes from 'components/ProtectedRoutes.js';
 
+
+
 function App () {
 	return (
 
@@ -24,9 +26,9 @@ function App () {
 					<Route path="/signup" element={<Signup />} />
 				</Routes>
 			</Router>
+			
 		</Container>
-
-	);
+		);
 }
 
 export default App;

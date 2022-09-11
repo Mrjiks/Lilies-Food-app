@@ -12,7 +12,7 @@ const CallToAction = () => {
 			</div>
 			<div>
 				<form className="cta-form">
-					<div>
+					<div className='form-btn-container'>
 						<input
 							className="cta-input"
 							type="email"

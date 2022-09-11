@@ -10,7 +10,7 @@ html {
 }
 body {
 	background: rgba(0, 48, 46, 1);
-	font-family: 'Poppins';
+	font-family: 'Poppins', serif;
 }
 p,
 h1,
@@ -19,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Poppins';
+	font-family: 'Poppins', serif;
 }
 .App {
 	text-align: center;
@@ -94,6 +94,7 @@ p {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
 }
 .cta-heading {
 	font-style: normal;
@@ -118,6 +119,7 @@ p {
 	border-radius: 5px;
 	margin-right: 8px;
 	text-align: center;
+
 }
 .cta-button {
 	width: 182px;
@@ -219,7 +221,7 @@ button {
 
 .form-wrapper .form-title {
 	margin: 0 auto;
-	font-family: 'Poppins';
+	font-family: 'Poppins', serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 27px;
@@ -256,7 +258,6 @@ button {
 
 .side-row {
 	display: flex;
-
 	margin: 2rem;
 }
 .sidebarcontainer h4 {
@@ -314,23 +315,23 @@ button {
 	display: flex;
 }
 /*? **************** Modal components stylings ************/
-.common-btn {
+/*.common-btn {
 	width: 479px;
 	height: 60px;
 	background: rgba(0, 48, 46, 1);
-	font-family: 'Poppins';
+	font-family: 'Poppins', serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 13px;
 	line-height: 27px;
 	text-align: center;
 	color: #f3c294;
-}
+}*/
 
 .modal-name {
 	width: 82px;
 	height: 33px;
-	font-family: 'Poppins';
+	font-family: 'Poppins', serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 17px;
@@ -409,7 +410,7 @@ button:hover {
 		flex-direction: column;
 		justify-content: center;
 		background: #0b0d17;
-		width: 100%;
+		/*width: 100%;*/
 	}
 	.footer-section h1 {
 		text-align: center;
@@ -418,7 +419,7 @@ button:hover {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		width: 100%;
+		/*width: 100%;*/
 		align-items: center;
 	}
 	.footer-item-wrapper h1 {
@@ -443,7 +444,7 @@ button:hover {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		width: 100%;
+		/*width: 100%;*/
 		padding-left: 2rem;
 		padding-right: 2rem;
 		padding-bottom: 2rem;
@@ -460,12 +461,11 @@ button:hover {
 
 	/*? CTA MOBILE CSS */
 	.cta-section {
-		margin-top: 1rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		align-items: center;
 		width: 100%;
+		margin:0 auto;
 	}
 	.cta-heading {
 		font-style: normal;
@@ -482,9 +482,22 @@ button:hover {
 		font-size: 18px;
 		line-height: 33px;
 		color: rgba(255, 255, 255, 0.95);
+		text-align: center;
+	}
+	.cta-form{
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		/*align-items: center;*/
+	}
+	.form-btn-container{
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		width: 100%;
 	}
 	.cta-input {
-		width: 280px;
+		width: 100%;
 		height: 51px;
 		background: #f7f7f7;
 		border: 1px solid #b3b3b3;
@@ -552,9 +565,9 @@ button:hover {
 		margin: 0 auto;
 		width: 100%;
 	}
-	.form-imge {
+	.form-image {
 		width: 100%;
-		max-width: 0 auto;
+
 		margin-bottom: 3rem;
 	}
 	.form-wrapper {
@@ -592,7 +605,7 @@ button:hover {
 	}
 
 	.form-wrapper .form-title {
-		font-family: 'Poppins';
+		font-family: 'Poppins', serif;
 		font-style: normal;
 		font-weight: 600;
 		font-size: 27px;
@@ -706,7 +719,7 @@ button:hover {
 		width: 479px;
 		height: 60px;
 		background: rgba(0, 48, 46, 1);
-		font-family: 'Poppins';
+		font-family: 'Poppins', serif;
 		font-style: normal;
 		font-weight: 600;
 		font-size: 13px;
@@ -718,7 +731,7 @@ button:hover {
 	.modal-name {
 		width: 82px;
 		height: 33px;
-		font-family: 'Poppins';
+		font-family: 'Poppins', serif;
 		font-style: normal;
 		font-weight: 600;
 		font-size: 17px;
@@ -741,13 +754,13 @@ button:hover {
 	}
 }
 
-@media only screen and (max-width: 844px) and (orientation: landscape) {
+@media only screen and (max-width: 768px) and (orientation: landscape) {
 	/*? Hero Section CSS */
 	.hero-image {
 		height: 200px;
 		width: 200px;
 		margin-left: 1rem;
-		margin-top: 3rem;
+		margin-top: 20rem;
 	}
 	.hero-text {
 		height: 5rem;
@@ -802,7 +815,6 @@ button:hover {
 	.feature-image {
 		object-fit: cover;
 	}
-
 	/*? CTA CSS */
 	.cta-section {
 		margin-top: 4rem;
@@ -825,6 +837,7 @@ button:hover {
 		line-height: 33px;
 		color: rgba(255, 255, 255, 0.95);
 		margin-right: 3rem;
+		text-align: center;
 	}
 	.cta-input {
 		width: 299px;
@@ -849,5 +862,29 @@ button:hover {
 		justify-content: center;
 		text-align: center;
 		margin-top: 2rem;
+	}
+}
+
+@media screen and (max-width: 480px){
+	/*? Hero Section CSS */
+	.hero-image {
+		height: 200px;
+		width: 200px;
+		margin-left: 1rem;
+		margin-top: 3rem;
+	}
+	.hero-text {
+		height: 5rem;
+		width: 40rem;
+		margin-top: 1rem;
+	}
+
+	.hero-text h1,
+	p {
+		margin-bottom: 1rem;
+	}
+	/*? Feature Section CSS */
+	.special-food-heading {
+		margin-top: 1rem;
 	}
 }

@@ -33,7 +33,6 @@ export const StyledNav = styled.nav`
 			color: rgba(0, 48, 46, 1);
 			border-radius: 0.438rem;
 			background: #e2b887;
-			margin-right: 2rem;
 			width: 90px;
 			margin: 0 auto;
 		}
