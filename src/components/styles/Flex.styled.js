@@ -4,7 +4,6 @@ export const Flex = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-
 	margin: 0 auto;
 
 	h1 {
@@ -49,9 +48,7 @@ export const Flex = styled.div`
 		flex-direction: column-reverse;
 		align-items: center;
 		justify-content: space-between;
-
 		margin: 0 auto;
-
 		.logo-wrapper {
 			display: none;
 			h3 {
@@ -64,50 +61,6 @@ export const Flex = styled.div`
 			}
 			.logo:hover {
 				filter: drop-shadow(0 0 0.3em #fbddbb);
-			}
-		}
-
-		.hero-image {
-			margin-top: 3rem;
-			height: auto;
-			width: auto;
-			text-align: center;
-		}
-
-		/*-----------HERO SECTION-----  */
-		.hero-text {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-
-			width: 100vw;
-			height: auto;
-			margin-top: 3rem;
-		}
-
-		.hero-pitch {
-			margin-bottom: 2.5rem;
-			text-align: center;
-			font-weight: 700;
-			font-size: 30px;
-			line-height: 180%;
-			margin-right: 3rem;
-		}
-
-		.hero-pitch-full {
-			text-align: center;
-			margin-right: 3rem;
-		}
-		.hero-buttons {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			margin-right: 5rem;
-			margin-left: 5rem;
-			img {
-				width: 100px;
-				text-align: end;
-				margin-right: 3rem;
 			}
 		}
 	}

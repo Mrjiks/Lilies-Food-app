@@ -14,7 +14,7 @@ Modal.setAppElement('#root');
 const Sidebar = () => {
 	const [modalIsOpen, setModalIsOpen] = useState(false);
 	return (
-		<div className="sidebarcontainer">
+		<div className="sideBarContainer">
 			<Modal
 				isOpen={modalIsOpen}
 				onRequestClose={() => setModalIsOpen(false)}

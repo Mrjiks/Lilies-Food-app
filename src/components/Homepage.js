@@ -4,7 +4,7 @@ import featuredfoodtwo from './assets/featuredfoodtwo.png';
 import google from './assets/google.svg';
 import apple from './assets/apple.svg';
 import Button from './Button';
-import { Container } from '../components/styles/Container.styled.js';
+import { Container } from './styles/Container.styled';
 
 /////////////////////////////////////////////////////////////////////////
 import Header from '../components/Header';
@@ -36,8 +36,8 @@ const Home = () => {
 							<Button text={apple} />
 						</div>
 					</div>
-					<div>
-						<img src={featuredfoodtwo} alt="" className="hero-image" />
+					<div className='hero-image-container'>
+						<img src={featuredfoodtwo} alt="Food" className="hero-image" />
 					</div>
 				</Flex>
 

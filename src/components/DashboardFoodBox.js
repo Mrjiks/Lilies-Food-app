@@ -10,7 +10,7 @@ const DashboardFoodBox = () => {
 		setCounter(prevCount => prevCount + 1);
 	};
 	return (
-		<div className="dasboardBox">
+		<div className="dashboardBox">
 			{dashboarddata &&
 				dashboarddata?.map(item => {
 					return (

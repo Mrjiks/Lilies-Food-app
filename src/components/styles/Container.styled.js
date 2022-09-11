@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-	width: 1440px;
-	max-width: 100%;
-
+	width: 1200px;
+	/*max-width: 100%;*/
 	padding: 0 20px;
 	margin: 0 auto;
 	scroll-behavior: smooth;
@@ -13,12 +12,16 @@ export const Container = styled.div`
 		align-self: flex-start;
 	}
 
-	@media only screen and (max-width: 768px) {
+	@media screen and (max-width: 768px) {
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		flex-direction: column;
-		gap: 1rem;
-		width: 100%;
+		width: 80vw;
+		text-align: center;
 		margin: 0 auto;
+		overflow: hidden;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 	}
 `;

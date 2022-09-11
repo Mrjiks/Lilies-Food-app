@@ -4,10 +4,10 @@ import { FaMinusCircle } from 'react-icons/fa';
 
 const Cartlist = ({ image, itemName, desc, price, quantity }) => {
 	return (
-		<div className="cartlist-container">
+		<div className="cartListContainer">
 			<div className="item-info-wrapper">
 				<div className="item-wrapper">
-					<img src={image} alt="" className="cartlistfood" />
+					<img src={image} alt="" className="cart-list-food" />
 					<div>
 						<h4 className="item-name">{itemName}</h4>
 						<p className="item-remove-btn">

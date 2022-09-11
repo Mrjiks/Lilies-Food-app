@@ -10,7 +10,7 @@ html {
 }
 body {
 	background: rgba(0, 48, 46, 1);
-	font-family: 'Poppins';
+	font-family: 'Poppins', serif;
 }
 p,
 h1,
@@ -19,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Poppins';
+	font-family: 'Poppins', serif;
 }
 .App {
 	text-align: center;
@@ -28,10 +28,17 @@ h6 {
 }
 
 /*? Hero Section CSS */
+.hero-image-container{
+	/*display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;*/
+
+}
 .hero-image {
 	height: 200px;
 	width: 200px;
-	margin-right: 3rem;
+	margin-left: 10rem;
 	margin-top: 10rem;
 }
 .hero-text {
@@ -94,6 +101,7 @@ p {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
 }
 .cta-heading {
 	font-style: normal;
@@ -118,6 +126,7 @@ p {
 	border-radius: 5px;
 	margin-right: 8px;
 	text-align: center;
+
 }
 .cta-button {
 	width: 182px;
@@ -183,8 +192,8 @@ p {
 	filter: drop-shadow(0 0 0.3em #fbddbb);
 }
 /*? Login Pages */
-.loginpage,
-.signuppage {
+.loginPage,
+.signupPage {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	margin-top: 90px;
@@ -219,7 +228,7 @@ button {
 
 .form-wrapper .form-title {
 	margin: 0 auto;
-	font-family: 'Poppins';
+	font-family: 'Poppins', serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 27px;
@@ -246,8 +255,8 @@ button {
 
 /*? ********************Dashboard CSS ********************/
 
-/* Sider  */
-.sidebarcontainer {
+/* Side  */
+.sideBarContainer {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -256,10 +265,9 @@ button {
 
 .side-row {
 	display: flex;
-
 	margin: 2rem;
 }
-.sidebarcontainer h4 {
+.sideBarContainer h4 {
 	margin-right: 1rem;
 	margin-left: 1rem;
 	opacity: 0.8;
@@ -268,7 +276,7 @@ button {
 .sidebar-logo {
 	color: #00302e;
 }
-/* dashboardcontainer */
+/* dashboard container */
 
 .NavHeader {
 	display: flex;
@@ -281,15 +289,15 @@ button {
 .NavHeader-margin {
 	margin-bottom: 3rem;
 }
-/* dasboardBox */
-.dasboardBox {
+/* dashboardBox */
+.dashboardBox {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 2rem;
 	background: #ffffff;
 }
 
-.foodboox-wrapper {
+.foodBoxWrapper {
 	width: 240px;
 	height: 307px;
 }
@@ -313,24 +321,24 @@ button {
 .sidebar-cart-wrapper {
 	display: flex;
 }
-/*? **************** Modal components stylings ************/
-.common-btn {
+/*? **************** Modal components styling ************/
+/*.common-btn {
 	width: 479px;
 	height: 60px;
 	background: rgba(0, 48, 46, 1);
-	font-family: 'Poppins';
+	font-family: 'Poppins', serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 13px;
 	line-height: 27px;
 	text-align: center;
 	color: #f3c294;
-}
+}*/
 
 .modal-name {
 	width: 82px;
 	height: 33px;
-	font-family: 'Poppins';
+	font-family: 'Poppins', serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 17px;
@@ -339,7 +347,7 @@ button {
 	margin-bottom: 2rem;
 }
 
-.cartlist-container {
+.cartListContainer {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	gap: 2rem;
@@ -362,7 +370,7 @@ button {
 	display: inline-flex;
 	align-items: center;
 }
-.cartlistfood {
+.cart-list-food {
 	width: 15%;
 	margin-right: 1rem;
 	margin-bottom: 20px;
@@ -373,19 +381,44 @@ button {
 	grid-template-columns: repeat(5, 1fr);
 	gap: 2rem;
 }
-
 button:hover {
 	cursor: pointer;
 }
 
 /*! Media Queries */
-
 @media only screen and (max-width: 768px) {
-	/*? Mobbile 320px Section CSS */
+
 	.App {
 		text-align: center;
-		width: 100%;
-		margin: 0;
+		margin: 0 auto;
+	}
+	/*? Hero Section CSS */
+	.hero-image-container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+	}
+	.hero-image {
+		height: auto;
+		width: 400px;
+		margin-right: 3rem;
+		margin-left: 0.5rem;
+		margin-top: 5rem;
+	}
+	.hero-text {
+		height: 25rem;
+		margin-bottom: 20px;
+	}
+	.hero-buttons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/*? Feature Section CSS */
+	.special-food-heading {
+		margin-top: 2rem;
 	}
 	.special-food-info {
 		display: flex;
@@ -396,7 +429,7 @@ button:hover {
 		margin-top: 2rem;
 	}
 
-	.flexmobile {
+	.flex-mobile {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -409,7 +442,7 @@ button:hover {
 		flex-direction: column;
 		justify-content: center;
 		background: #0b0d17;
-		width: 100%;
+		/*width: 100%;*/
 	}
 	.footer-section h1 {
 		text-align: center;
@@ -418,7 +451,7 @@ button:hover {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		width: 100%;
+		/*width: 100%;*/
 		align-items: center;
 	}
 	.footer-item-wrapper h1 {
@@ -428,7 +461,6 @@ button:hover {
 	.footer-item {
 		text-align: center;
 	}
-
 	.downloads {
 		display: flex;
 		flex-direction: column;
@@ -443,7 +475,6 @@ button:hover {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		width: 100%;
 		padding-left: 2rem;
 		padding-right: 2rem;
 		padding-bottom: 2rem;
@@ -451,7 +482,6 @@ button:hover {
 	}
 	.socials {
 		display: flex;
-
 		justify-content: space-around;
 	}
 	.socials .fa-icons {
@@ -460,12 +490,11 @@ button:hover {
 
 	/*? CTA MOBILE CSS */
 	.cta-section {
-		margin-top: 1rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		align-items: center;
 		width: 100%;
+		margin:0 auto;
 	}
 	.cta-heading {
 		font-style: normal;
@@ -482,9 +511,21 @@ button:hover {
 		font-size: 18px;
 		line-height: 33px;
 		color: rgba(255, 255, 255, 0.95);
+		text-align: center;
+	}
+	.cta-form{
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+	.form-btn-container{
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		width: 100%;
 	}
 	.cta-input {
-		width: 280px;
+		width: 100%;
 		height: 51px;
 		background: #f7f7f7;
 		border: 1px solid #b3b3b3;
@@ -543,8 +584,8 @@ button:hover {
 	}
 
 	/*? Mobile Login Pages */
-	.loginpage,
-	.signuppage {
+	.loginPage,
+	.signupPage {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -552,9 +593,9 @@ button:hover {
 		margin: 0 auto;
 		width: 100%;
 	}
-	.form-imge {
+	.form-image {
 		width: 100%;
-		max-width: 0 auto;
+
 		margin-bottom: 3rem;
 	}
 	.form-wrapper {
@@ -592,7 +633,7 @@ button:hover {
 	}
 
 	.form-wrapper .form-title {
-		font-family: 'Poppins';
+		font-family: 'Poppins', serif;
 		font-style: normal;
 		font-weight: 600;
 		font-size: 27px;
@@ -622,11 +663,11 @@ button:hover {
 		cursor: pointer;
 	}
 
-	/* CARTLIST MOBILE */
+	/* CART-LIST MOBILE */
 	/*? ********************Dashboard CSS ********************/
 
-	/* Sider  */
-	.sidebarcontainer {
+	/* SideBar  */
+	.sideBarContainer {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
@@ -635,10 +676,9 @@ button:hover {
 
 	.side-row {
 		display: flex;
-
 		margin: 2rem;
 	}
-	.sidebarcontainer h4 {
+	.sideBarContainer h4 {
 		margin-right: 1rem;
 		margin-left: 1rem;
 		opacity: 0.8;
@@ -647,7 +687,7 @@ button:hover {
 	.sidebar-logo {
 		color: #00302e;
 	}
-	/* dashboardcontainer */
+	/* dashboard container */
 
 	.NavHeader {
 		display: flex;
@@ -661,8 +701,8 @@ button:hover {
 	.NavHeader-margin {
 		margin-bottom: 1rem;
 	}
-	/* dasboardBox */
-	.dasboardBox {
+	/* dashboardBox */
+	.dashboardBox {
 		display: flex;
 		flex-direction: column;
 		background: #ffffff;
@@ -671,7 +711,7 @@ button:hover {
 		margin: 0 auto;
 	}
 
-	.foodboox-wrapper {
+	.foodBoxWrapper {
 		width: 140px;
 		height: 307px;
 	}
@@ -680,17 +720,13 @@ button:hover {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-
-		/* margin-right: 1rem; */
 	}
 
 	/* Main DashBoard Wrapper */
-
 	.dashboard-wrapper {
 		display: flex;
 		background-color: #f7f7f7;
 	}
-
 	.feature-image {
 		object-fit: cover;
 		margin-top: -2rem;
@@ -701,12 +737,12 @@ button:hover {
 	.sidebar-cart-wrapper {
 		display: flex;
 	}
-	/*? **************** Modal components stylings ************/
+	/*? **************** Modal components styling ************/
 	.common-btn {
 		width: 479px;
 		height: 60px;
 		background: rgba(0, 48, 46, 1);
-		font-family: 'Poppins';
+		font-family: 'Poppins', serif;
 		font-style: normal;
 		font-weight: 600;
 		font-size: 13px;
@@ -714,11 +750,10 @@ button:hover {
 		text-align: center;
 		color: #f3c294;
 	}
-
 	.modal-name {
 		width: 82px;
 		height: 33px;
-		font-family: 'Poppins';
+		font-family: 'Poppins', serif;
 		font-style: normal;
 		font-weight: 600;
 		font-size: 17px;
@@ -726,8 +761,7 @@ button:hover {
 		color: #00302e;
 		margin-bottom: 2rem;
 	}
-
-	.cartlist-container {
+	.cartListContainer {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
 		gap: 1rem;
@@ -741,29 +775,47 @@ button:hover {
 	}
 }
 
-@media only screen and (max-width: 844px) and (orientation: landscape) {
-	/*? Hero Section CSS */
+@media only screen and (max-width: 360px) and (orientation: landscape) {
+	/*-----------HERO SECTION-----  */
 	.hero-image {
-		height: 200px;
-		width: 200px;
-		margin-left: 1rem;
 		margin-top: 3rem;
+		height: 100px;
+		width: 300px;
+		text-align: center;
 	}
 	.hero-text {
-		height: 5rem;
-		width: 40rem;
-		margin-top: 1rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: auto;
+		margin-top: 3rem;
 	}
-
-	.hero-text h1,
-	p {
+	.hero-pitch {
 		margin-bottom: 2.5rem;
+		text-align: center;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 180%;
+		margin-right: 3rem;
+	}
+	.hero-pitch-full {
+		text-align: center;
+		margin-right: 3rem;
+	}
+	.hero-buttons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 5rem;
+		margin-left: 5rem;
+
 	}
 
 	/*? Feature Section CSS */
 	.special-food-heading {
 		margin-top: 20rem;
 	}
+
 	.special-food-heading h1 {
 		color: white;
 		text-align: center;
@@ -772,6 +824,7 @@ button:hover {
 		font-weight: 600;
 		line-height: 2rem;
 	}
+
 	.special-food-heading p {
 		font-style: normal;
 		font-weight: 400;
@@ -799,6 +852,7 @@ button:hover {
 		line-height: 33px;
 		color: rgba(255, 255, 255, 0.83);
 	}
+
 	.feature-image {
 		object-fit: cover;
 	}
@@ -825,6 +879,7 @@ button:hover {
 		line-height: 33px;
 		color: rgba(255, 255, 255, 0.95);
 		margin-right: 3rem;
+		text-align: center;
 	}
 	.cta-input {
 		width: 299px;
@@ -851,3 +906,28 @@ button:hover {
 		margin-top: 2rem;
 	}
 }
+
+
+/*@media only screen and (max-width: 360px){
+
+	.hero-image {
+		height: auto;
+		width: 100px;
+		margin-left: 1rem;
+		margin-top: 3rem;
+	}
+	.hero-text {
+		height: 5rem;
+		width: 10rem;
+		margin-top: 1rem;
+	}
+
+	.hero-text h1,
+	p {
+		margin-bottom: 1rem;
+	}
+
+	.special-food-heading {
+		margin-top: 1rem;
+	}
+}*/

@@ -36,7 +36,7 @@ export const Login = ({ title, login, image, create, forgot }) => {
 		}
 	};
 	return (
-		<section className="loginpage" id="signin">
+		<section className="loginPage" id="signin">
 			<div>
 				<img src={image} alt="" className="form-imge" />
 			</div>

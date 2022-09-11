@@ -17,7 +17,7 @@ const Footer = () => {
 				<div className="footer-item">
 					<h1>Support</h1>
 					<p>Help Center</p>
-					<p>Safty Center</p>
+					<p>Safety Center</p>
 				</div>
 				<div className="footer-item">
 					<h1>Legal</h1>

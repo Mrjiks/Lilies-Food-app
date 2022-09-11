@@ -4,6 +4,7 @@ export const StyledNav = styled.nav`
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
+	
 	a {
 		text-decoration: none;
 		color: rgba(251, 221, 187, 1);
@@ -33,8 +34,7 @@ export const StyledNav = styled.nav`
 			color: rgba(0, 48, 46, 1);
 			border-radius: 0.438rem;
 			background: #e2b887;
-			margin-right: 2rem;
-			width: 90px;
+			width: 100px;
 			margin: 0 auto;
 		}
 	}
