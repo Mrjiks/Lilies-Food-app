@@ -2,8 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 	width: 1200px;
-	/*max-width: 100%;*/
-	/*padding: 0 20px;*/
 	margin: 0 auto;
 	scroll-behavior: smooth;
 	background: rgba(0, 48, 46, 1);
