@@ -428,8 +428,9 @@ button:hover {
 	.hero-text {
 		height: 25rem;
 		margin-bottom: 20px;
-		width: 100%;
+		width: 87vw;
 		color: #fbfbfb;
+
 	}
 	.hero-buttons {
 		display: flex;
@@ -574,6 +575,7 @@ button:hover {
 		font-style: normal;
 		font-weight: 600;
 		line-height: 185%;
+		width: 100vw;
 	}
 	.special-food-heading p {
 		font-style: normal;
@@ -583,6 +585,7 @@ button:hover {
 		text-align: center;
 		color: rgba(255, 255, 255, 0.83);
 		margin-top: 2rem;
+		width: 80vw;
 	}
 
 	.feature-wrapper h1 {
@@ -602,6 +605,8 @@ button:hover {
 		line-height: 33px;
 		color: rgba(255, 255, 255, 0.83);
 		margin-bottom: 2rem;
+		width: 100%;
+		text-align: center;
 	}
 
 	/*? Mobile Login Pages */
@@ -751,7 +756,7 @@ button:hover {
 	.feature-image {
 		object-fit: cover;
 		margin-top: -2rem;
-		width: 100%;
+		width: 80%;
 	}
 	/*? Sidebar */
 
@@ -824,6 +829,7 @@ button:hover {
 		justify-content: center;
 		height: auto;
 		margin-top: 3rem;
+
 	}
 	.hero-pitch {
 		margin-bottom: 2.5rem;
@@ -886,6 +892,7 @@ button:hover {
 		font-size: 18px;
 		line-height: 33px;
 		color: rgba(255, 255, 255, 0.83);
+		width: 100%;
 	}
 
 	.feature-image {
