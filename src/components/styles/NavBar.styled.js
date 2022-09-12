@@ -5,6 +5,7 @@ export const StyledNav = styled.nav`
 	align-items: center;
 	margin: 0 auto;
 	
+	
 	a {
 		text-decoration: none;
 		color: rgba(251, 221, 187, 1);

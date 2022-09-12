@@ -14,8 +14,8 @@ import CallToAction from '../components/CallToAction';
 
 const Home = () => {
 	return (
-		<>
-				<Header />
+		<container>
+			<Header />
 			<div className='hero-container'>
 					<div className="hero-text">
 						<h1 className="hero-pitch">
@@ -40,7 +40,7 @@ const Home = () => {
 				<Featured />
 				<CallToAction />
 			
-		</>
+		</container>
 	);
 };
 

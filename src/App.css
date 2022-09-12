@@ -26,6 +26,10 @@ h6 {
 	margin-left: 1.25rem;
 	margin-right: 1.25rem;
 }
+/* Nav Header */
+.flex-mobile{
+	width: 100%;
+}
 /* Hero Container*/
 .hero-container{
 	display: flex;
@@ -400,6 +404,9 @@ button:hover {
 	.App {
 		text-align: center;
 		margin: 0 auto;
+	}
+	.flex-mobile{
+		width: 100%;
 	}
 	.hero-container{
 		display: flex;
@@ -790,7 +797,17 @@ button:hover {
 }
 
 @media only screen and (max-width: 360px) and (orientation: landscape) {
+	/* NavLinks*/
+	.signup {
+		height: 30px;
+		color: rgba(0, 48, 46, 1);
+		border-radius: 0.438rem;
+		background: #e2b887;
+		width: 80px;
+		margin: 0 auto;
+	}
 	/*-----------HERO SECTION-----  */
+
 	.hero-container{
 		display: flex;
 		flex-direction: column-reverse;
@@ -926,26 +943,3 @@ button:hover {
 }
 
 
-/*@media only screen and (max-width: 360px){
-
-	.hero-image {
-		height: auto;
-		width: 100px;
-		margin-left: 1rem;
-		margin-top: 3rem;
-	}
-	.hero-text {
-		height: 5rem;
-		width: 10rem;
-		margin-top: 1rem;
-	}
-
-	.hero-text h1,
-	p {
-		margin-bottom: 1rem;
-	}
-
-	.special-food-heading {
-		margin-top: 1rem;
-	}
-}*/
