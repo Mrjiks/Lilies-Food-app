@@ -5,7 +5,7 @@ const Button = ({ text }) => {
 	return (
 		<StyledButton>
 			<a href="/">
-				<img src={text} alt="" className="playstores" />
+				<img src={text} alt="" className="playStores" />
 			</a>
 		</StyledButton>
 	);

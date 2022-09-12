@@ -26,13 +26,16 @@ h6 {
 	margin-left: 1.25rem;
 	margin-right: 1.25rem;
 }
-
+/* Hero Container*/
+.hero-container{
+	display: flex;
+}
 /*? Hero Section CSS */
 .hero-image-container{
-	/*display: flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 0 auto;*/
+	margin: 0 auto;
 
 }
 .hero-image {
@@ -45,16 +48,22 @@ h6 {
 	height: 10rem;
 	width: 40.625rem;
 	margin-top: 10rem;
+	color: #f7f7f7;
+}
+.hero-text span {
+	color: rgba(251, 221, 187, 1);
 }
 
 .hero-text h1,
 p {
 	margin-bottom: 2.5rem;
 }
-
+.playStores {
+	margin: 0.5rem;
+}
 /*? Feature Section CSS */
 .special-food-heading {
-	margin-top: 20rem;
+	margin-top: 15rem;
 }
 .special-food-heading h1 {
 	color: white;
@@ -392,6 +401,11 @@ button:hover {
 		text-align: center;
 		margin: 0 auto;
 	}
+	.hero-container{
+		display: flex;
+		flex-direction: column;
+		margin-top: -5rem;
+	}
 	/*? Hero Section CSS */
 	.hero-image-container{
 		display: flex;
@@ -401,21 +415,23 @@ button:hover {
 	}
 	.hero-image {
 		height: auto;
-		width: 400px;
-		margin-right: 3rem;
-		margin-left: 0.5rem;
-		margin-top: 5rem;
+		width: 200px;
+		margin: 0 auto;
 	}
 	.hero-text {
 		height: 25rem;
 		margin-bottom: 20px;
+		width: 100%;
+		color: #fbfbfb;
 	}
 	.hero-buttons {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-
+	.apple{
+	margin-left: 5rem;
+   }
 	/*? Feature Section CSS */
 	.special-food-heading {
 		margin-top: 2rem;
@@ -442,7 +458,6 @@ button:hover {
 		flex-direction: column;
 		justify-content: center;
 		background: #0b0d17;
-		/*width: 100%;*/
 	}
 	.footer-section h1 {
 		text-align: center;
@@ -451,7 +466,6 @@ button:hover {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		/*width: 100%;*/
 		align-items: center;
 	}
 	.footer-item-wrapper h1 {
@@ -777,6 +791,10 @@ button:hover {
 
 @media only screen and (max-width: 360px) and (orientation: landscape) {
 	/*-----------HERO SECTION-----  */
+	.hero-container{
+		display: flex;
+		flex-direction: column-reverse;
+	}
 	.hero-image {
 		margin-top: 3rem;
 		height: 100px;

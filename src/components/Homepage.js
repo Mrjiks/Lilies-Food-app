@@ -1,10 +1,8 @@
 import React from 'react';
-import { Flex } from './styles/Flex.styled';
 import featuredfoodtwo from './assets/featuredfoodtwo.png';
 import google from './assets/google.svg';
 import apple from './assets/apple.svg';
 import Button from './Button';
-import { Container } from './styles/Container.styled';
 
 /////////////////////////////////////////////////////////////////////////
 import Header from '../components/Header';
@@ -17,9 +15,8 @@ import CallToAction from '../components/CallToAction';
 const Home = () => {
 	return (
 		<>
-			<Container>
 				<Header />
-				<Flex>
+			<div className='hero-container'>
 					<div className="hero-text">
 						<h1 className="hero-pitch">
 							Order <span>food </span>anytime,
@@ -30,21 +27,19 @@ const Home = () => {
 							<br />
 							delivered to you in no time. Affordable, tasty and fast!
 						</p>
-
 						<div className="hero-buttons">
-							<Button text={google} />
-							<Button text={apple} />
+							<Button text={google} className='google'/>
+							<Button text={apple} className ="apple"/>
 						</div>
 					</div>
 					<div className='hero-image-container'>
 						<img src={featuredfoodtwo} alt="Food" className="hero-image" />
 					</div>
-				</Flex>
-
+			</div>
 				<SpecialFeatureHeading />
 				<Featured />
 				<CallToAction />
-			</Container>
+			
 		</>
 	);
 };

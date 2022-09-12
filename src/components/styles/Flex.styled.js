@@ -20,14 +20,6 @@ export const Flex = styled.div`
 		line-height: 2.063rem;
 		color: rgba(255, 255, 255, 0.74);
 	}
-
-	span {
-		color: rgba(251, 221, 187, 1);
-	}
-
-	.playstores {
-		margin: 0.5rem;
-	}
 	.logo-wrapper {
 		display: flex;
 		h3 {
