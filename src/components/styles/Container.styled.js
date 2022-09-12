@@ -17,11 +17,10 @@ export const Container = styled.div`
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		width: 80vw;
+		width: 100%;
 		text-align: center;
-		margin: 0 auto;
 		overflow: hidden;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 5rem;
 	}
 `;

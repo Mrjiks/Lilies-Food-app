@@ -6,12 +6,12 @@ import { Flex } from './styles/Flex.styled';
 const Header = () => {
 	return (
 		<Flex className="flex-mobile">
-			<div className="logo-wrapper sticky-header">
+			<div className="logo-wrapper">
 				<a href="/">
 					<img src={logoTwo} alt="" className="logo" />
 				</a>
 			</div>
-			<div>
+			<div className='sticky-header'>
 				<NavBar />
 			</div>
 		</Flex>
