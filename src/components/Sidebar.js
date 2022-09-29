@@ -24,7 +24,7 @@ const Sidebar = () => {
 					overlay: { background: 'grey' },
 				}}
 			>
-				<span onClick={() => setModalIsOpen(false)}>Close X</span>
+				<button onClick={() => setModalIsOpen(false)}>Back To Dashboard</button>
 				<CartModal />
 			</Modal>
 			<div className='sidebarModalFlex'>
