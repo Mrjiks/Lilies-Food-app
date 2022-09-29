@@ -1,21 +1,18 @@
 import React from 'react';
-import { dashboarddata } from '../data.js';
 import DashboardFood from './pages/DashboardFood';
-import { useState } from 'react';
+import { useGlobalContext } from './NewDashBoard/context';
+import '../App.css';
 
 const DashboardFoodBox = () => {
-	const [count, setCounter] = useState(0);
+	const { id, cart, increaseItem } = useGlobalContext();
 
-	const handleClick = () => {
-		setCounter(prevCount => prevCount + 1);
-	};
 	return (
-		<div className="dashboardBox">
-			{dashboarddata &&
-				dashboarddata?.map(item => {
+		<div className='dashboardBox'>
+			{cart &&
+				cart?.map(item => {
 					return (
 						<DashboardFood
-							onClick={handleClick}
+							onClick={() => increaseItem(id)}
 							{...item}
 							key={item.id}
 						></DashboardFood>

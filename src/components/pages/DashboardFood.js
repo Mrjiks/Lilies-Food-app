@@ -1,21 +1,29 @@
+import { useGlobalContext } from 'components/NewDashBoard/context';
 import React from 'react';
 import { HiPlus } from 'react-icons/hi';
 
-const Dashboardfood = ({ image, title, desc, price, onClick, count }) => {
+const Dashboardfood = ({ id, img, title, desc, price }) => {
+	const { removeItem, increaseItem, decreaseItem } = useGlobalContext();
 	return (
 		<div
-			className="foodbox-wrapper"
+			className='foodbox-wrapper'
 			style={{ margin: '2rem' }}
-			onClick={onClick}
 		>
-			<img src={image} alt="" className="feature-image" />
-			<h1 className="feature-heading">{title}</h1>
-			<p className="feature-desc">{desc}</p>
-			<div className="price-and-item-btn">
-				<p style={{ color: '#00eddf', fontWeight: 'bold' }}>{price} </p>
+			<img
+				src={img}
+				alt=''
+				className='feature-image'
+			/>
+			<h1 className='feature-heading'>{title}</h1>
+			<p className='feature-desc'>{desc}</p>
+			<div className='price-and-item-btn'>
+				<p style={{ color: '#00eddf', fontWeight: 'bold' }}>N{price} </p>
 
 				<h3>
-					<p style={{ color: '#e1b078', cursor: 'pointer' }}>
+					<p
+						style={{ color: '#e1b078', cursor: 'pointer' }}
+						onClick={() => increaseItem(id)}
+					>
 						<HiPlus
 							style={{
 								color: '#00302e',
@@ -24,6 +32,7 @@ const Dashboardfood = ({ image, title, desc, price, onClick, count }) => {
 								marginBottom: '-0.3rem',
 								cursor: 'pointer',
 							}}
+							onClick={() => increaseItem(id)}
 						/>
 						Add to cart
 					</p>

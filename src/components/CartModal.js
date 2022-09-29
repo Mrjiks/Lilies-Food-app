@@ -1,27 +1,13 @@
 import React from 'react';
-import Cart from './Cart';
-import ModalTitle from './ModalTitle';
-import { Container } from './styles/Container.styled';
+import CartContainer from './NewDashBoard/CartContainer';
+import Navbar from './NewDashBoard/Navbar';
 
 const CartModal = () => {
 	return (
-		<Container>
-			<div className="modal">
-				<ModalTitle modalName={'Your Cart'} />
-				<Cart />
-				{/* <button
-					style={{
-						marginRight: 'auto',
-						marginLeft: 'auto',
-						background: 'rgba(0, 48, 46, 1)',
-						color: 'gold',
-						
-					}}
-				>
-					Check
-				</button> */}
-			</div>
-		</Container>
+		<div className='modal'>
+			<Navbar />
+			<CartContainer />
+		</div>
 	);
 };
 
