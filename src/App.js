@@ -3,6 +3,7 @@ import { Container } from './components/styles/Container.styled.js';
 import './App.css';
 import Home from './components/Homepage';
 import Register from './components/Register';
+import ErrorPage from './components/pages/ErrorPage';
 import Signup from './components/Signup';
 import Dashboard from './components/Dashboard.js';
 import { ToastContainer } from 'react-toastify';
@@ -32,6 +33,10 @@ function App() {
 					<Route
 						path='/signup'
 						element={<Signup />}
+					/>
+					<Route
+						path='*'
+						element={<ErrorPage />}
 					/>
 				</Routes>
 			</Router>
