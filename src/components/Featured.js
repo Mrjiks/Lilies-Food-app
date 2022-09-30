@@ -2,15 +2,20 @@ import React from 'react';
 
 import { StyledFeatured } from './styles/Featured.styled';
 import { data } from '../data.js';
-import Featuredfood from './pages/featuredfood';
+import Featuredfood from './Featuredfood';
 
 const Featured = () => {
 	return (
 		<StyledFeatured>
-			<div className="special-food-info">
+			<div className='special-food-info'>
 				{data &&
 					data?.map(item => {
-						return <Featuredfood key={item.id} {...item}></Featuredfood>;
+						return (
+							<Featuredfood
+								key={item.id}
+								{...item}
+							></Featuredfood>
+						);
 					})}
 			</div>
 		</StyledFeatured>

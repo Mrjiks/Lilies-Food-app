@@ -15,6 +15,7 @@ Modal.setAppElement('#root');
 const Sidebar = () => {
 	const [modalIsOpen, setModalIsOpen] = useState(false);
 	const { quantity, total } = useGlobalContext();
+
 	return (
 		<div className='sideBarContainer'>
 			<Modal
@@ -24,7 +25,12 @@ const Sidebar = () => {
 					overlay: { background: 'grey' },
 				}}
 			>
-				<button onClick={() => setModalIsOpen(false)}>Back To Dashboard</button>
+				<button
+					onClick={() => setModalIsOpen(false)}
+					className='common-btn'
+				>
+					&larr;
+				</button>
 				<CartModal />
 			</Modal>
 			<div className='sidebarModalFlex'>
@@ -49,25 +55,18 @@ const Sidebar = () => {
 					<div className='dashboard-order side-row'>
 						<BsCartPlus />
 						<h4>Quantity:</h4>
-						<span>{quantity}</span> <br />
+						<span style={{ color: 'orangered' }}>{quantity}</span> <br />
 					</div>
 					<div className='dashboard-order side-row'>
 						<TbSum />
-						<h4>Sum: N{total}</h4>
+						<h4>
+							Sum: <span style={{ color: 'orangered' }}>N{total}</span>
+						</h4>
 					</div>
 					<div className='dashboard-cart side-row'>
-						<div>
-							<GrView />
-						</div>
-
 						<button
+							className='common-btn'
 							onClick={() => setModalIsOpen(true)}
-							style={{
-								width: '100px',
-								height: 'auto',
-								marginLeft: '1rem',
-								marginRight: '3rem',
-							}}
 						>
 							View your Cart
 						</button>

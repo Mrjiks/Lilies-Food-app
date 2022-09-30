@@ -335,9 +335,10 @@ button {
 	display: flex;
 }
 /*? **************** Modal components styling ************/
-/*.common-btn {
-	width: 479px;
-	height: 60px;
+.common-btn {
+	width: 150px;
+	height: 30px;
+	margin-top: 4rem;
 	background: rgba(0, 48, 46, 1);
 	font-family: 'Poppins', serif;
 	font-style: normal;
@@ -346,7 +347,7 @@ button {
 	line-height: 27px;
 	text-align: center;
 	color: #f3c294;
-}*/
+}
 
 .modal-name {
 	width: 82px;
@@ -744,7 +745,7 @@ button:hover {
 
 	/* SideBar  */
 	.sideBarContainer {
-		display: flex;
+		display: none;
 		flex-direction: column;
 		justify-content: flex-start;
 		background: #fbfbfb;
@@ -815,7 +816,7 @@ button:hover {
 	}
 	/*? **************** Modal components styling ************/
 	.common-btn {
-		width: 479px;
+		width: 100px;
 		height: 60px;
 		background: rgba(0, 48, 46, 1);
 		font-family: 'Poppins', serif;
@@ -908,13 +909,13 @@ Cart
 ===============
 */
 .cart {
+	display: flex;
+	flex-direction: column;
   min-height: calc(100vh - 120px);
-  width: 90vw;
+  width: 50%;
   margin: 0 auto;
-  margin-top: 40px;
-  padding: 2.5rem 0;
-  max-width: var(--fixed-width);
-}
+  margin-top: 10px;
+  }
 .cart h2 {
   text-transform: uppercase;
   text-align: center;
@@ -927,7 +928,9 @@ Cart
   text-align: center;
 }
 .cart footer {
-  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+
   text-align: center;
 }
 .cart-total h4 {
@@ -936,19 +939,11 @@ Cart
   justify-content: space-between;
   margin-top: 1rem;
 }
-.clear-btn {
-  background: transparent;
-  padding: 0.5rem 1rem;
-  color:  #f3c294;
-  border: 1px solid var(--clr-red-dark);
-  margin-top: 2.25rem;
-  border-radius: var(--radius);
+
+.header-margin-top{
+margin-top: 50px;
 }
-.clear-btn:hover {
-  background: var(--clr-red-light);
-  color: var(--clr-red-dark);
-  border-color: var(--clr-red-light);
-}
+
 /*
 =============== 
 Cart Item
@@ -964,6 +959,7 @@ Cart Item
 .cart-item img {
   width: 5rem;
   height: 5rem;
+	margin-bottom: 5rem;
   object-fit: cover;
 }
 .cart-item h4 {
@@ -972,9 +968,11 @@ Cart Item
   letter-spacing: 2px;
 }
 .item-price {
-  color: var(--clr-grey-5);
+  color: #f3c294;
+	
 }
 .remove-btn {
+	text-transform: capitalize;
   color: #f3c294;
   letter-spacing: var(--spacing);
   cursor: pointer;
@@ -985,7 +983,7 @@ Cart Item
   transition: var(--transition);
 }
 .remove-btn:hover {
-  color: var(--clr-primary-light);
+  color: red;
 }
 .amount-btn {
   width: 1.5rem;
@@ -994,7 +992,7 @@ Cart Item
   cursor: pointer;
 }
 .amount-btn svg {
-  fill: var(--clr-primary);
+  fill: #f3c294;
 }
 .amount-btn:hover svg {
   fill: var(--clr-primary-light);
@@ -1006,10 +1004,11 @@ Cart Item
   line-height: 1;
 }
 hr {
-  background: var(--clr-grey-5);
+  background: #f3c294;
   border-color: transparent;
   border-width: 0.25px;
 }
+
 
 /* NewDashboard CSS ends here */
 

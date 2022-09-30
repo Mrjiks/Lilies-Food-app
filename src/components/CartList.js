@@ -1,5 +1,5 @@
 import React from 'react';
-import DashboardFood from './pages/DashboardFood';
+import DashboardFood from './CartListItems';
 import { useGlobalContext } from './NewDashBoard/context';
 import '../App.css';
 

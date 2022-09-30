@@ -6,7 +6,7 @@ const Navbar = () => {
 	return (
 		<nav>
 			<div className='nav-center'>
-				<h3>Lilis Food</h3>
+				{/* <h3>Lilis Food</h3> */}
 				<div className='nav-container'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
