@@ -4,7 +4,6 @@ import { BsCartPlus } from 'react-icons/bs';
 import Vector from './assets/Vector.png';
 import { Link } from 'react-router-dom';
 import { useGlobalContext } from 'components/NewDashBoard/context';
-import { GrView } from 'react-icons/gr';
 import { TbSum } from 'react-icons/tb';
 
 import Modal from 'react-modal';

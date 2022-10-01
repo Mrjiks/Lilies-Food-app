@@ -9,38 +9,48 @@ import Header from '../components/Header';
 import Featured from '../components/Featured';
 import SpecialFeatureHeading from '../components/SpecialFeatureHeading';
 import CallToAction from '../components/CallToAction';
+import { Container } from './styles/Container.styled';
 
 /////////////////////////////////////////////////////////////////////////
 
 const Home = () => {
 	return (
-		<container>
+		<Container>
 			<Header />
 			<div className='hero-container'>
-					<div className="hero-text">
-						<h1 className="hero-pitch">
-							Order <span>food </span>anytime,
-							<br /> anywhere
-						</h1>
-						<p className="hero-pitch-full">
-							Browse from our list of specials to place your order and have food
-							<br />
-							delivered to you in no time. Affordable, tasty and fast!
-						</p>
-						<div className="hero-buttons">
-							<Button text={google} className='google'/>
-							<Button text={apple} className ="apple"/>
-						</div>
+				<div className='hero-text'>
+					<h1 className='hero-pitch'>
+						Order <span>food </span>anytime,
+						<br /> anywhere
+					</h1>
+					<p className='hero-pitch-full'>
+						Browse from our list of specials to place your order and have food
+						<br />
+						delivered to you in no time. Affordable, tasty and fast!
+					</p>
+					<div className='hero-buttons'>
+						<Button
+							text={google}
+							className='google'
+						/>
+						<Button
+							text={apple}
+							className='apple'
+						/>
 					</div>
-					<div className='hero-image-container'>
-						<img src={featuredfoodtwo} alt="Food" className="hero-image" />
-					</div>
+				</div>
+				<div className='hero-image-container'>
+					<img
+						src={featuredfoodtwo}
+						alt='Food'
+						className='hero-image'
+					/>
+				</div>
 			</div>
-				<SpecialFeatureHeading />
-				<Featured />
-				<CallToAction />
-			
-		</container>
+			<SpecialFeatureHeading />
+			<Featured />
+			<CallToAction />
+		</Container>
 	);
 };
 

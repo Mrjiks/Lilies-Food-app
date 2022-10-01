@@ -3,7 +3,7 @@ import React from 'react';
 import { HiPlus } from 'react-icons/hi';
 
 const Dashboardfood = ({ id, img, title, desc, price }) => {
-	const { removeItem, increaseItem, decreaseItem } = useGlobalContext();
+	const { increaseItem } = useGlobalContext();
 	return (
 		<div
 			className='foodbox-wrapper'

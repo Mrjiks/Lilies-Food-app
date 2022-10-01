@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import '../../App.css';
 
 const CartContainer = () => {
-	const { cart, total, quantity } = useGlobalContext();
+	const { cart, total } = useGlobalContext();
 	if (cart.length === 0) {
 		return (
 			<section className='cart'>

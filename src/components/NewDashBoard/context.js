@@ -1,9 +1,8 @@
-import React, { useState, useContext, useReducer, useEffect } from 'react';
+import React, { useContext, useReducer, useEffect, useRef } from 'react';
 import { cartdata } from './data';
 
 import reducer from './reducer';
 
-const url = 'https://course-api.com/react-useReducer-cart-project';
 const AppContext = React.createContext();
 
 const initialState = {
@@ -15,6 +14,8 @@ const initialState = {
 
 const AppProvider = ({ children }) => {
 	const [state, dispatch] = useReducer(reducer, initialState);
+
+	const footerScroll = useRef();
 
 	//Cart functionalties : Approach
 	//1. Declear all functionalies in the contextAPI
@@ -38,6 +39,15 @@ const AppProvider = ({ children }) => {
 		dispatch({ type: 'GET_TOTALS' });
 	}, [state.cart]);
 
+	const goToHome = () => {
+		footerScroll.current.scrollIntoView({
+			behavior: 'smooth',
+		});
+	};
+	useEffect(() => {
+		goToHome();
+	});
+
 	return (
 		<AppContext.Provider
 			value={{
@@ -46,6 +56,9 @@ const AppProvider = ({ children }) => {
 				removeItem,
 				increaseItem,
 				decreaseItem,
+
+				footerScroll,
+				goToHome,
 			}}
 		>
 			{children}
