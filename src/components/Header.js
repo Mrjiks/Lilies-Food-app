@@ -9,14 +9,12 @@ const Header = () => {
 	return (
 		<Flex className='flex-mobile'>
 			<div className='logo-wrapper'>
-				<a href='/'>
-					<img
-						src={logoTwo}
-						alt=''
-						className='logo'
-						ref={footerScroll}
-					/>
-				</a>
+				<img
+					src={logoTwo}
+					alt=''
+					className='logo'
+					ref={footerScroll}
+				/>
 			</div>
 			<div className='sticky-header'>
 				<NavBar />

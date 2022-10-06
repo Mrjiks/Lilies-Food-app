@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Container } from './components/styles/Container.styled.js';
 import './App.css';
-import Home from './components/Homepage';
+import Home from './components/Home';
 import Register from './components/Register';
 import ErrorPage from './components/pages/ErrorPage';
 import Signup from './components/Signup';

@@ -42,14 +42,14 @@ const Footer = () => {
 			</div>
 			<div className='footer-copyright'>
 				<div>
-					<a>
+					<span>
 						<img
 							className='footer-logo'
 							src={logoTwo}
 							alt=''
 							onClick={goToHome}
 						/>
-					</a>
+					</span>
 				</div>
 				<div>
 					<p>All rights reserved © Harrison E. , 2022</p>

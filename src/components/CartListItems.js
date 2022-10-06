@@ -2,7 +2,7 @@ import { useGlobalContext } from 'components/NewDashBoard/context';
 import React from 'react';
 import { HiPlus } from 'react-icons/hi';
 
-const Dashboardfood = ({ id, img, title, desc, price }) => {
+const CartListItems = ({ id, img, title, desc, price }) => {
 	const { increaseItem } = useGlobalContext();
 	return (
 		<div
@@ -42,4 +42,4 @@ const Dashboardfood = ({ id, img, title, desc, price }) => {
 	);
 };
 
-export default Dashboardfood;
+export default CartListItems;

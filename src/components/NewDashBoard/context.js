@@ -44,9 +44,6 @@ const AppProvider = ({ children }) => {
 			behavior: 'smooth',
 		});
 	};
-	useEffect(() => {
-		goToHome();
-	});
 
 	return (
 		<AppContext.Provider

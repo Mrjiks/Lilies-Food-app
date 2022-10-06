@@ -5,10 +5,10 @@ import apple from './assets/apple.svg';
 import Button from './Button';
 
 /////////////////////////////////////////////////////////////////////////
-import Header from '../components/Header';
-import Featured from '../components/Featured';
-import SpecialFeatureHeading from '../components/SpecialFeatureHeading';
-import CallToAction from '../components/CallToAction';
+import Header from './Header';
+import Featured from './Featured';
+import FeaturedHeading from './FeaturedHeading';
+import CallToAction from './CallToAction';
 import { Container } from './styles/Container.styled';
 
 /////////////////////////////////////////////////////////////////////////
@@ -47,7 +47,7 @@ const Home = () => {
 					/>
 				</div>
 			</div>
-			<SpecialFeatureHeading />
+			<FeaturedHeading />
 			<Featured />
 			<CallToAction />
 		</Container>

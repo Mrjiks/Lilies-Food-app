@@ -1,8 +1,8 @@
 import React from 'react';
 
-const SpecialFeatureHeading = () => {
+const FeaturedHeading = () => {
 	return (
-		<div className="special-food-heading">
+		<div className='special-food-heading'>
 			<h1>Special Meals of the day!</h1>
 			<p>
 				Check our sepecials of the day and get discounts on all our meals <br />
@@ -12,4 +12,4 @@ const SpecialFeatureHeading = () => {
 	);
 };
 
-export default SpecialFeatureHeading;
+export default FeaturedHeading;
