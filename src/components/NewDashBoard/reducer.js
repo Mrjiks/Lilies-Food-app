@@ -1,6 +1,6 @@
 const reducer = (state, action) => {
 	if (action.type === 'CLEAR_CART') {
-		return { ...state, cart: [] }; //returns old state and modifies only the cart properties, in this setting it to empty array
+		return { ...state, cart: [] }; //returns old state and modifies only the cart property, in this case, to an empty array
 	}
 	if (action.type === 'REMOVE') {
 		return {

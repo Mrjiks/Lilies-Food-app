@@ -17,9 +17,9 @@ const AppProvider = ({ children }) => {
 
 	const footerScroll = useRef();
 
-	//Cart functionalties : Approach
-	//1. Declear all functionalies in the contextAPI
-	//2. Next dispatch an action using disptach method of useReducer() hook
+	//Cart functionalities : Approach
+	//1. Declare all functionalities in the contextAPI
+	//2. Next dispatch an action using dispatch method of useReducer() hook
 	//3.Second, handle this action with reducer function
 
 	const clearCart = () => {
@@ -62,9 +62,9 @@ const AppProvider = ({ children }) => {
 		</AppContext.Provider>
 	);
 };
-// custom hook for using the created context API
+// custom hook for using the created contextAPI
 export const useGlobalContext = () => {
 	return useContext(AppContext);
 };
 
-export { AppContext, AppProvider };
+export { AppProvider };
